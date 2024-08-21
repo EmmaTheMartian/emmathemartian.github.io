@@ -135,7 +135,7 @@ ul.favourited-list > li, ul.favourited-list > li > span {
 	vertical-align: middle;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-device-width: 600px) {
 	:root {
 		font-size: 3rem;
 	}
