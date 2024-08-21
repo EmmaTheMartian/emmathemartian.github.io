@@ -124,3 +124,15 @@ hr {
 
 	width: 100%;
 }
+
+ul.favourited-list {
+	list-style-type: none;
+}
+
+ul.favourited-list > li, ul.favourited-list > li > span {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	height: 24px;
+	line-height: 20px;
+	vertical-align: middle;
+}

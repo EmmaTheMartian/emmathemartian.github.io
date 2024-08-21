@@ -4,12 +4,12 @@ import html
 
 fn favourited_list(entries map[string][]string) html.HtmlElementOrString {
 	mut list := []html.HtmlElementOrString{}
-	for class, values in entries {
+	for kind, values in entries {
 		for value in values {
-			list << html.li(value, class: class)
+			list << html.li('${html.span(kind, class: 'material-symbols-outlined')} ${value}')
 		}
 	}
-	return html.ul(list)
+	return html.ul(list, class: 'favourited-list')
 }
 
 pub fn about() html.HtmlElementOrString {
@@ -30,6 +30,7 @@ pub fn about() html.HtmlElementOrString {
 			html.li('I love fog, rain, and snow. Calm sunny days with a breeze are also comforting.')
 			html.li('I use tabs for indentation and a tab width of 8 spaces.')
 		])
+		html.hr()
 		html.h2('Interests')
 		html.ul([
 			html.li('Programming')
@@ -40,9 +41,17 @@ pub fn about() html.HtmlElementOrString {
 			html.li('Learning')
 			html.li('Astronomy')
 		])
-		html.h2('Games (Favourites, Likes, Dislikes)')
+		html.hr()
+		html.h2('Key')
 		favourited_list({
-			'favourite': [
+			'favorite': [ 'Favourite' ]
+			'thumb_up': [ 'Like' ]
+			'rainy': [ 'Dislike' ]
+		})
+		html.hr()
+		html.h2('Games')
+		favourited_list({
+			'favorite': [
 				'Modded Minecraft'
 				'Beat Saber'
 				'Rec Room'
@@ -51,7 +60,7 @@ pub fn about() html.HtmlElementOrString {
 				'Terraria'
 				'Vanilla Minecraft (1.6.4 and before)'
 			]
-			'like': [
+			'thumb_up': [
 				'Forager'
 				'SNKRX'
 				'Genshin Impact'
@@ -60,13 +69,14 @@ pub fn about() html.HtmlElementOrString {
 				'Stardew Valley'
 				'Satisfactory'
 			]
-			'dislike': [
+			'rainy': [
 				'Vanilla Minecraft (after 1.6.4)'
 			]
 		})
-		html.h2('Music Tastes (Favourites, Likes, Dislikes)')
+		html.hr()
+		html.h2('Music Tastes')
 		favourited_list({
-			'favourite': [
+			'favorite': [
 				'EDM'
 				'Dubstep'
 				'Breakcore'
@@ -75,48 +85,51 @@ pub fn about() html.HtmlElementOrString {
 				'Vocaloid'
 				'2000s Alternative'
 			]
-			'like': [
+			'thumb_up': [
 				'Metal'
 				'Metalcore'
 			]
-			'dislike': [
+			'rainy': [
 				'Country'
 				'Modern Rap'
 			]
 		})
-		html.h2('Programming Languages (Favourites, Likes, Dislikes)')
+		html.hr()
+		html.h2('Programming Languages')
 		favourited_list({
-			'favourite': [
+			'favorite': [
 				'C'
 				'Lua (for embedded scripting)'
 				'Kotlin'
 				'V'
 			]
-			'like': [
+			'thumb_up': [
 				'Java'
 				'Python'
 			]
-			'dislike': [
+			'rainy': [
 				'Lua (outside of embedded scripting)'
 				'JavaScript'
 				'C++'
 			]
 		})
-		html.h2('Minecraft Mods (Favourites, Likes, Dislikes)')
+		html.hr()
+		html.h2('Minecraft Mods')
 		favourited_list({
-			'favourite': [
+			'favorite': [
 				'GregTech'
 				'IndustrialCraft 2'
 				'Applied Energistics 2'
 				'Psi'
 				'Create'
 			]
-			'like': [
+			'thumb_up': [
 				'Immersive Engineering'
 				'Ars Nouveau'
 				'Botania'
 			]
 		})
+		html.hr()
 		html.p('The contents of this page are basically ripped straight from my ${html.a('pronouns.cc page', 'pronouns.cc/@EmmaTheMartian')}.')
 	])
 }

@@ -3,21 +3,21 @@ module src
 import time
 import html
 
-pub const site_nav = html.nav([
+const site_nav = html.nav([
 	html.a('index', '/')
-	html.a('other', '/other/')
 	html.a('about', '/about/')
 	html.a('contact', '/contact/')
 ])
 
-pub const site_footer = html.div([
+const site_footer = html.div([
 	html.hr()
 	html.p('Site compiled at ${html.code(time.now().str())}')
 ], parameters: { 'class': 'footer' })
 
-pub const site_head = html.div([
+const site_head = html.div([
 	html.title('Emma\'s Website')
 	html.link('stylesheet', '/style/style.css')
+	html.link('stylesheet', 'https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opzs,wght,FILL,GRAD@20,400,0,0')
 ])
 
 pub fn page(content []html.HtmlElementOrString) html.HtmlElementOrString {
