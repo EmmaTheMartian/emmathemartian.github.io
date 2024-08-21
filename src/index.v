@@ -9,9 +9,9 @@ pub fn index() html.HtmlElementOrString {
 		html.p('You are probably looking for information about me or how to contact me. Both of those are available in the navigation bar above :P')
 		html.p('To make it look like the index page actually has some content, I am going to rant about what I used to make this website.')
 		html.ul([
-			'Catppuccin Latte/Macchiatto colour schemes (light and dark respectively)'
-			'Google Material Symbols'
-			'Montserrat and Space Mono fonts from Google Fonts'
+			html.li('Catppuccin Latte/Macchiatto colour schemes (light and dark respectively)')
+			html.li('Google Material Symbols')
+			html.li('Montserrat and Space Mono fonts from Google Fonts')
 		])
 		html.p('However that\'s the normal stuff. Now for the fun stuff:
 		I dislike writing HTML/CSS/JS but like writing websites. The solution?
