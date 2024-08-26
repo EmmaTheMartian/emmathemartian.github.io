@@ -15,121 +15,69 @@ fn favourited_list(entries map[string][]string) html.HtmlElementOrString {
 pub fn about() html.HtmlElementOrString {
 	return page([
 		html.h1('About Me')
-		html.p('Oh so you are curious about me. Well, I am Emmeline (or just Emma).
-		I enjoy programming, modded Minecraft, and lots of other assorted things.')
+		html.p('Oh so you are curious about me. Well, I am Emmeline (or just Emma).')
 		html.p('Some random things about me:')
 		html.ul([
 			html.li('I am INTJ-T.')
-			html.li('I enjoy automation, logistics, and rhythm games.')
-			html.li('I am 17 and my birthday is March 21.')
-			html.li('My favourite Vocaloids are Flower, GUMI, and Kagemine Len.')
-			html.li('My favourite EDM (+subgenres) artists are Cjbeards, Creo, Camellia, Colbreakz, Dirty Palm, SOTAREKO, Kotori, and KSHMR.')
-			html.li('My favourite non-EDM artists are Arctic Monkeys, The Amity Affliction, Two Door Cinema Club, Senses Fail, Three Days Grace, and Fall Out Boy.')
-			html.li('My favourite drink is hot chocolate, then lemonade as a close sefcond. I do not drink anything carbonated and I very rarely drink anything caffeinated.')
-			html.li('I enjoy modding video games, primarily Minecraft.')
+			html.li('My favourite drink is hot chocolate, then lemonade as a close second. I do not drink anything carbonated and I very rarely drink anything caffeinated.')
 			html.li('I love fog, rain, and snow. Calm sunny days with a breeze are also comforting.')
-			html.li('I use tabs for indentation and a tab width of 8 spaces.')
 		])
-		html.hr()
-		html.h2('Interests')
-		html.ul([
-			html.li('Programming')
-			html.li('Gaming (primarily automation/logistics games)')
-			html.li('Linux')
-			html.li('Linguistics')
-			html.li('Psychology')
-			html.li('Learning')
-			html.li('Astronomy')
-		])
-		html.hr()
-		html.h2('Key')
-		favourited_list({
-			'favorite': [ 'Favourite' ]
-			'thumb_up': [ 'Like' ]
-			'rainy': [ 'Dislike' ]
-		})
 		html.hr()
 		html.h2('Games')
-		favourited_list({
-			'favorite': [
-				'Modded Minecraft'
-				'Beat Saber'
-				'Rec Room'
-				'Portal'
-				'Project Sekai'
-				'Terraria'
-				'Vanilla Minecraft (1.6.4 and before)'
-			]
-			'thumb_up': [
-				'Forager'
-				'SNKRX'
-				'Genshin Impact'
-				'Honkai: Star Rail'
-				'Borderlands 2'
-				'Stardew Valley'
-				'Satisfactory'
-			]
-			'rainy': [
-				'Vanilla Minecraft (after 1.6.4)'
-			]
-		})
+		html.p('I primarily play modded Minecraft, Terraria, and assorted rhythm games.
+		I enjoy automation/logistics (modded Minecraft and Satisfactory) and a nice challenge (modded Terraria and rhythm games).
+		Portal is also one of my favourites. The lore and gameplay are just masterfully made :D')
+		html.details([
+			html.summary('List Form')
+			favourited_list({
+				'favorite': [
+					'Modded Minecraft'
+					'Beat Saber'
+					'Rec Room'
+					'Portal'
+					'Project Sekai'
+					'Terraria'
+					'Vanilla Minecraft (1.6.4 and before)'
+				]
+				'thumb_up': [
+					'Forager'
+					'SNKRX'
+					'Genshin Impact'
+					'Honkai: Star Rail'
+					'Borderlands 2'
+					'Stardew Valley'
+					'Satisfactory'
+				]
+			})
+		])
 		html.hr()
-		html.h2('Music Tastes')
-		favourited_list({
-			'favorite': [
-				'EDM'
-				'Dubstep'
-				'Breakcore'
-				'Drumstep'
-				'Emo'
-				'Vocaloid'
-				'2000s Alternative'
-			]
-			'thumb_up': [
-				'Metal'
-				'Metalcore'
-			]
-			'rainy': [
-				'Country'
-				'Modern Rap'
-			]
-		})
+		html.h2('Music')
+		html.p('For the most part I listen to EDM (and its many subgenres), 2000s Alternative, and Emo.
+		In regards to EDM (+subgenres) I really like Cjbeards, Creo, Camellia, Colbreakz, Dirty Palm, SOTAREKO, Kotori, and KSHMR.
+		For non-EDM artists, I love Arctic Monkeys, The Amity Affliction, Two Door Cinema Club, Senses Fail, Three Days Grace, and Fall Out Boy.
+		I also listen to Vocaloid a good bit. For the 2 Vocaloid nerds reading this, my favourites are GUMI, Flower, and Len.
+		Indie rock is also a fun genre :D')
+		html.p('As for what music genres I dislike, country. I cannot stand country music whatsoever.')
 		html.hr()
-		html.h2('Programming Languages')
-		favourited_list({
-			'favorite': [
-				'C'
-				'Lua (for embedded scripting)'
-				'Kotlin'
-				'V'
-			]
-			'thumb_up': [
-				'Java'
-				'Python'
-			]
-			'rainy': [
-				'Lua (outside of embedded scripting)'
-				'JavaScript'
-				'C++'
-			]
-		})
+		html.h2('Programming')
+		html.p('I primarily work in V, Kotlin, and Java. The latter two are used for Minecraft modding and I use the former for almost everything else.
+		I do not particularly like Java but after using it so often, I have grown to just suck it up. Kotlin, C, V, and embedded Lua are my four favourite languages.
+		Python is okay but I only really use it for prototypes, Discord bots, and small CLI applications.
+		C++ is probably one of my most disliked languages. I despise its standard library with a passion. Not to mention its unholy syntax...')
+		html.p('Also, I use tabs for indentation and a tab-width of 8 spaces.')
 		html.hr()
-		html.h2('Minecraft Mods')
-		favourited_list({
-			'favorite': [
-				'GregTech'
-				'IndustrialCraft 2'
-				'Applied Energistics 2'
-				'Psi'
-				'Create'
-			]
-			'thumb_up': [
-				'Immersive Engineering'
-				'Ars Nouveau'
-				'Botania'
-			]
-		})
+		html.h2('Minecraft')
+		html.p('I do a ${html.strong('lot')} of Minecraft modding and play a lot of modded Minecraft. Just as my favourite game genres, I like automation and logistics in Minecraft too.
+		GregTech and IC2 are wonderful and are my favourites. Psi and AE2 are also really fun.
+		I have a love-hate relationship with Create. I love the mod but dislike the recipes and progression. That is probably because I am so used to the microcrafting of GregTech though.
+		I also really like Immersive Engineering and Botania.
+		I am iffy about Mekanism. In a pack where there are not many other major tech mods, it is fun. But with others it becomes extremely overpowered and in my experiences, it is quite difficult to rebalance.')
+		html.p('I use fairly unique keybinds and people seem to find them weird XD. I use E for use/place block, Tab for my inventory, and Mouse 5 for sprint.')
 		html.hr()
-		html.p('The contents of this page are basically ripped straight from my ${html.a('pronouns.cc page', 'pronouns.cc/@EmmaTheMartian')}.')
+		html.h2('Assorted Interests and Hobbies')
+		html.p('I really like astronomy, psychology, world building, and linguistics.')
+		html.p('I quite like making conlangs and often make them for worlds that I am building. I enjoy going into absurd detail with my worlds, for
+		example in the main world that I spend my time working on, I have marked tectonic plate edges on the map so that I can use them as I am developing
+		other portions of the map. I planning to make multiple languages and dialects for different nations, regions, and cities.')
 	])
 }

@@ -14,6 +14,7 @@ TEXT_ELEMENTS = [
 	'title',
 	'li',
 	'code',
+	'summary',
 ]
 
 CONTAINER_ELEMENTS = [
@@ -26,6 +27,7 @@ CONTAINER_ELEMENTS = [
 	'ul',
 	'ol',
 	'pre',
+	'details',
 ]
 
 SIMPLE_ELEMENTS = [

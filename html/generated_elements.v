@@ -168,6 +168,17 @@ import arrays
 	})
 }
 
+@[inline] pub fn summary(text ElementArg, params ElementParams) HtmlElement {
+	return elm('summary', ElementParams{
+		...params,
+		children: match text {
+			HtmlElement { arrays.concat(params.children, text) }
+			string { arrays.concat(params.children, text) }
+			[]HtmlElementOrString { arrays.append(params.children, text) }
+		}
+	})
+}
+
 @[inline] pub fn html(children []HtmlElementOrString, params ElementParams) HtmlElement {
 	return elm('html', ElementParams{
 		...params,
@@ -226,6 +237,13 @@ import arrays
 
 @[inline] pub fn pre(children []HtmlElementOrString, params ElementParams) HtmlElement {
 	return elm('pre', ElementParams{
+		...params,
+		children: arrays.append(children, params.children)
+	})
+}
+
+@[inline] pub fn details(children []HtmlElementOrString, params ElementParams) HtmlElement {
+	return elm('details', ElementParams{
 		...params,
 		children: arrays.append(children, params.children)
 	})

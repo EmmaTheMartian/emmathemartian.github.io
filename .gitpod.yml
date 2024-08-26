@@ -1,3 +1,7 @@
 tasks:
   - init: |
-      git clone https://github.com/vlang/v .v && cd .v && make && ./v symlink
+      git clone https://github.com/vlang/v && cd v && make && cd ..
+      git clone https://github.com/EmmaTheMartian/clockwork
+  - command: |
+      cd v && ./v symlink && cd ..
+      cd clockwork && v install EmmaTheMartian.Maple && v run . install && cd ..

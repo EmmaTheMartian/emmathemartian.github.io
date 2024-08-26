@@ -8,8 +8,8 @@
 		--bg-2: var(--ctp-macchiato-surface1);
 		--fg: var(--ctp-macchiato-text);
 		--fg-1: var(--ctp-macchiato-subtext);
-		--accent: var(--ctp-macchiato-pink);
-		--accent-2: var(--ctp-macchiato-mauve);
+		--accent: var(--ctp-macchiato-yellow);
+		--accent-2: var(--ctp-macchiato-peach);
 	}
 }
 
@@ -20,8 +20,8 @@
 		--bg-2: var(--ctp-latte-surface1);
 		--fg: var(--ctp-latte-text);
 		--fg-1: var(--ctp-latte-subtext);
-		--accent: var(--ctp-latte-pink);
-		--accent-2: var(--ctp-macchiato-mauve);
+		--accent: var(--ctp-latte-green);
+		--accent-2: var(--ctp-latte-teal);
 	}
 }
 

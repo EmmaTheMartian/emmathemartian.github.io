@@ -1,0 +1,9 @@
+plugins = [ '@/v' ]
+
+task:watch = {
+	run = '${v} watch run ${v_main}';
+}
+
+task:build.html.elements = {
+	run = 'cd html && python3 ./gen_elements.py && cd ..';
+}
