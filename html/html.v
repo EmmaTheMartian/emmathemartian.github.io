@@ -115,6 +115,11 @@ pub fn build(build_path string, pages map[string]PageFn) {
 			file.close()
 		}
 
+		file.writeln('<!DOCTYPE html>') or {
+			println(err)
+			panic('vsg: could not write doctype to file at ${path}')
+		}
+
 		file.writeln(compiled_page) or {
 			println(err)
 			panic('vsg: could not write line to file at ${path}')
