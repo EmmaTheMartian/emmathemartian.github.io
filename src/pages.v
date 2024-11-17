@@ -14,7 +14,7 @@ const site_footer = html.div([
 	html.p('Site compiled at ${html.code(time.now().str())}')
 ], parameters: { 'class': 'footer' })
 
-const site_head = html.div([
+const site_head = html.head([
 	html.title('Emma\'s Website')
 	html.link('stylesheet', '/style/style.css')
 	html.link('stylesheet', 'https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opzs,wght,FILL,GRAD@20,400,0,0')
