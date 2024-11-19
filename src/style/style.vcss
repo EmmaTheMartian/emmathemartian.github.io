@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
 
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bg: var(--ctp-macchiato-base);
@@ -13,6 +14,7 @@
 	}
 }
 
+/* Light mode */
 @media (prefers-color-scheme: light) {
 	:root {
 		--bg: var(--ctp-latte-base);
@@ -25,6 +27,7 @@
 	}
 }
 
+/* Objects */
 object UseSpaceMono {
 	font-family: 'Space Mono', monospace;
 	font-weight: 400;
@@ -58,6 +61,7 @@ object Flexed {
 	justify-content: center;
 }
 
+/* CSS */
 html {
 	inherit UseMontserrat;
 	inherit Menu;
@@ -135,6 +139,16 @@ ul.favourited-list > li, ul.favourited-list > li > span {
 	vertical-align: middle;
 }
 
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 8px;
+	border: 1px solid var(--accent);
+}
+
+/* "Mobile Mode" */
 @media only screen and (max-device-width: 600px) {
 	:root {
 		font-size: 3rem;

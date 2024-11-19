@@ -4,6 +4,7 @@ import html
 
 pub fn contact() html.HtmlElementOrString {
 	return page([
+		html.h1('Contact')
 		html.p('Here are my "socials"')
 		html.ul([
 			html.li('Discord: ${html.code('@emmathemartian')} (send me the word "glados" so that I can differentiate from spam messages!)')

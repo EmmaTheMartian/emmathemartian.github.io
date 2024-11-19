@@ -179,6 +179,28 @@ import arrays
 	})
 }
 
+@[inline] pub fn th(text ElementArg, params ElementParams) HtmlElement {
+	return elm('th', ElementParams{
+		...params,
+		children: match text {
+			HtmlElement { arrays.concat(params.children, text) }
+			string { arrays.concat(params.children, text) }
+			[]HtmlElementOrString { arrays.append(params.children, text) }
+		}
+	})
+}
+
+@[inline] pub fn td(text ElementArg, params ElementParams) HtmlElement {
+	return elm('td', ElementParams{
+		...params,
+		children: match text {
+			HtmlElement { arrays.concat(params.children, text) }
+			string { arrays.concat(params.children, text) }
+			[]HtmlElementOrString { arrays.append(params.children, text) }
+		}
+	})
+}
+
 @[inline] pub fn html(children []HtmlElementOrString, params ElementParams) HtmlElement {
 	return elm('html', ElementParams{
 		...params,
@@ -244,6 +266,20 @@ import arrays
 
 @[inline] pub fn details(children []HtmlElementOrString, params ElementParams) HtmlElement {
 	return elm('details', ElementParams{
+		...params,
+		children: arrays.append(children, params.children)
+	})
+}
+
+@[inline] pub fn table(children []HtmlElementOrString, params ElementParams) HtmlElement {
+	return elm('table', ElementParams{
+		...params,
+		children: arrays.append(children, params.children)
+	})
+}
+
+@[inline] pub fn tr(children []HtmlElementOrString, params ElementParams) HtmlElement {
+	return elm('tr', ElementParams{
 		...params,
 		children: arrays.append(children, params.children)
 	})

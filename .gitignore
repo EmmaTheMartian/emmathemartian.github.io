@@ -21,5 +21,8 @@ bin/
 # Local V install
 /v/
 
+# Local Clockwork install
+/clockwork/
+
 # VSG Output Directory
 /build/

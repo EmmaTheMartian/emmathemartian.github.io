@@ -18,5 +18,6 @@ fn main() {
 		'other/index': src.other
 		'contact/index': src.contact
 		'about/index': src.about
+		'projects/index': src.projects
 	})
 }

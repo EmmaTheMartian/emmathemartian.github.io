@@ -7,6 +7,7 @@ const site_nav = html.nav([
 	html.a('index', '/')
 	html.a('about', '/about/')
 	html.a('contact', '/contact/')
+	html.a('projects', '/projects/')
 ])
 
 const site_footer = html.div([

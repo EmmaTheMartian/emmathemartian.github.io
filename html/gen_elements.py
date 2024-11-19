@@ -15,6 +15,8 @@ TEXT_ELEMENTS = [
 	'li',
 	'code',
 	'summary',
+	'th',
+	'td',
 ]
 
 CONTAINER_ELEMENTS = [
@@ -28,6 +30,8 @@ CONTAINER_ELEMENTS = [
 	'ol',
 	'pre',
 	'details',
+	'table',
+	'tr',
 ]
 
 SIMPLE_ELEMENTS = [

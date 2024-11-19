@@ -1,5 +1,7 @@
 plugins = [ '@/v' ]
 
+config:v_main = 'main.v'
+
 task:watch = {
 	run = '${v} watch run ${v_main}';
 }
