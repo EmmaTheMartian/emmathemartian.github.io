@@ -1,6 +1,6 @@
 module src
 
-import html
+import emmathemartian.vsg.html
 
 pub fn index() html.HtmlElementOrString {
 	return page([

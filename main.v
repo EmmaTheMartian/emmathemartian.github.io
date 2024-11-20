@@ -1,6 +1,6 @@
 import os
-import html
-import css
+import emmathemartian.vsg.html
+import emmathemartian.vsg.css
 import src
 
 const build_path = 'build'

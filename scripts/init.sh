@@ -3,16 +3,29 @@
 set -e
 
 # Download V
-git clone https://github.com/vlang/v
+if [ ! -e 'v/' ]
+then
+	git clone https://github.com/vlang/v
+fi
+
 cd v
-make
+if [ ! -e './v' ]
+then
+	make
+fi
 sudo ./v symlink
 cd ..
 
 # Download Clockwork
-git clone https://github.com/EmmaTheMartian/clockwork
+if [ ! -e 'clockwork/' ]
+then
+	git clone https://github.com/EmmaTheMartian/clockwork
+fi
 # Build and install Clockwork
 cd clockwork
 ../v/v install EmmaTheMartian.Maple
 ../v/v run . install
 cd ..
+
+# Install dependencies
+clockwork deps

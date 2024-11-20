@@ -1,6 +1,6 @@
 module src
 
-import html
+import emmathemartian.vsg.html
 
 struct Project {
 	name string

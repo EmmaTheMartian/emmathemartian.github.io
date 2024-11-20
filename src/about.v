@@ -1,6 +1,6 @@
 module src
 
-import html
+import emmathemartian.vsg.html
 
 fn favourited_list(entries map[string][]string) html.HtmlElementOrString {
 	mut list := []html.HtmlElementOrString{}

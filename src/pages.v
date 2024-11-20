@@ -1,7 +1,7 @@
 module src
 
 import time
-import html
+import emmathemartian.vsg.html
 
 const site_nav = html.nav([
 	html.a('index', '/')
