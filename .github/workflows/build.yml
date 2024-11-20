@@ -31,6 +31,11 @@ jobs:
         uses: vlang/setup-v@v1.3
         with:
           stable: true
+      - name: Install Dependencies
+        run: |
+          v install --git https://github.com/emmathemartian/vsg &&
+          mkdir -p ~/.vmodules/emmathemartian/ &&
+          mv ~/.vmodules/vsg ~/.vmodules/emmathemartian/vsg
       - name: Build
         run: v run .
       - name: Upload artifact
