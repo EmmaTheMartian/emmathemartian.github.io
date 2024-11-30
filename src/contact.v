@@ -8,7 +8,6 @@ pub fn contact() html.HtmlElementOrString {
 		html.p('Here are my "socials"')
 		html.ul([
 			html.li('Discord: ${html.code('@emmathemartian')} (send me the word "glados" so that I can differentiate from spam messages!)')
-			html.li(html.a('My Discord Server (yRHBcy9vfg)', 'https://discord.gg/yRHBcy9vfg'))
 			html.li(html.a('Codeberg', 'https://codeberg.org/EmmaTheMartian'))
 			html.li(html.a('GitHub', 'https://github.com/EmmaTheMartian'))
 			html.li(html.a('GitLab*', 'https://gitlab.com/EmmaTheMartian'))
