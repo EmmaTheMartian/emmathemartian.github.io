@@ -18,6 +18,18 @@ const my_projects = [
 		'Active WIP'
 	}
 	Project{
+		'ReTekkit',
+		'ReTekkit revived and reimagined for modern versions',
+		'https://github.com/retekkit/retekkit',
+		'Active WIP'
+	}
+	Project{
+		'beep',
+		'a self-hosted mini-blogger.',
+		'https://github.com/emmathemartian/beep',
+		'Active WIP'
+	}
+	Project{
 		'Clockwork',
 		'A language-agnostic build tool',
 		'https://github.com/emmathemartian/clockwork',
@@ -27,6 +39,12 @@ const my_projects = [
 		'Maple',
 		'Because JSON was overkill',
 		'https://github.com/emmathemartian/maple',
+		'Active'
+	}
+	Project{
+		'Raylib for V',
+		'Auto-generated, up-to-date Raylib bindings for V',
+		'https://github.com/emmathemartian/raylib-for-v',
 		'Active'
 	}
 	Project{
@@ -40,13 +58,13 @@ const my_projects = [
 		'Dapper',
 		'A data-generation library for NeoForge',
 		'https://codeberg.org/emmathemartian/dapper',
-		'Active WIP'
+		'Active'
 	}
 	Project{
 		'Regolith',
 		'Cross platform bulk registration library for Minecraft',
 		'https://codeberg.org/emmathemartian/regolith',
-		'Active WIP'
+		'Active'
 	}
 	Project{
 		'mrrp',
@@ -70,8 +88,6 @@ pub fn projects() html.HtmlElementOrString {
 	return page([
 		html.h1('Projects')
 		html.p('I keep some projects on Codeberg and some on GitHub.
-		For my public domain things (libaries, for example), Codeberg is used more often.
-		For software and mods, I tend to use GitHub.
 		Why? I honestly do not know. I started doing this at some point and just have not fully migrated to Codeberg yet.')
 		html.hr()
 		html.h2('The Great Table of Projects')

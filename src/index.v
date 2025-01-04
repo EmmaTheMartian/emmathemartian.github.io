@@ -13,7 +13,7 @@ pub fn index() html.HtmlElementOrString {
 			html.li('Google Material Symbols')
 			html.li('Montserrat and Space Mono fonts from Google Fonts')
 		])
-		html.p('However that\'s the normal stuff. Now for the fun stuff:
+		html.p('However that is the normal stuff. Now for the fun stuff:
 		I dislike writing HTML/CSS/JS but like writing websites. The solution?
 		Simple: ditch it. I wrote this website with V. Check out the website\'s source code ${html.a('here', 'https://github.com/emmathemartian/emmathemartian.github.io')} if you are interested!')
 	])
