@@ -2,15 +2,6 @@ plugins = [ 'v' ]
 
 config:v_main = 'main.v'
 
-task:deps = {
-	run = [
-		'${v} install --git https://github.com/emmathemartian/vsg',
-		// By default, `v install --git` will install the module at ~/.vmodules/vsg instead of ~/.vmodules/emmathemartian/vsg
-		'mkdir -p ~/.vmodules/emmathemartian/',
-		'mv ~/.vmodules/vsg/ ~/.vmodules/emmathemartian/vsg/'
-	]
-}
-
 task:watch = {
 	run = '${v} watch run ${v_main}'
 }

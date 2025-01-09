@@ -19,11 +19,10 @@ cd ..
 # Download Clockwork
 if [ ! -e 'clockwork/' ]
 then
-	git clone https://github.com/EmmaTheMartian/clockwork
+	git clone --recursive https://github.com/EmmaTheMartian/clockwork
 fi
 # Build and install Clockwork
 cd clockwork
-../v/v install EmmaTheMartian.Maple
 ../v/v run . install
 cd ..
 
