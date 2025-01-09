@@ -43,8 +43,8 @@ const my_projects = [
 	}
 	Project{
 		'Raylib for V',
-		'Auto-generated, up-to-date Raylib bindings for V',
-		'https://github.com/emmathemartian/raylib-for-v',
+		'Official, auto-generated, up-to-date Raylib bindings for V',
+		'https://github.com/vlang/raylib-for-v',
 		'Active'
 	}
 	Project{
