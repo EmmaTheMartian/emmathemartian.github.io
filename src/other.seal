@@ -1,0 +1,19 @@
+[ begin: "head" ]
+	[ title: "Emma's Website" ]
+[ end: "head" ]
+
+[ begin: "body" ]
+	[ nav:
+		"index" </index/>
+		"about" </about/>
+		"contact" </contact/>
+		"projects" </projects/>
+	]
+
+	[ p: "welcome to the other page" ]
+	[ p: "no, there is not anything to do here" ]
+	[ hr ]
+	[ p: "Other: \"Did you know that Turquoise is considered the best colour\"" ]
+	[ p: "Me: \"I have never heard of this\"" ]
+	[ p: "Other: \"It's $[ em: "cyantifically" ] proven\"" ]
+[ end: "body" ]

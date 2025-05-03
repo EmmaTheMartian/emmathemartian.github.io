@@ -1,0 +1,24 @@
+[ begin: "head" ]
+	[ title: "Emma's Website" ]
+[ end: "head" ]
+
+[ begin: "body" ]
+	[ nav:
+		"index" </index/>
+		"about" </about/>
+		"contact" </contact/>
+		"projects" </projects/>
+	]
+
+	[ h1: "Hai!" ]
+	[ p: "I am Emma :D" ]
+	[ p:
+		"You are probably looking for information about me or how to contact me."
+		"Both of those are available in the navigation bar above :P"
+	]
+	[ p:
+		"I dislike writing HTML/CSS/JS but like writing websites."
+		"The solution? Simple: ditch them! I wrote this website with $[ a: "Seal" <https://github.com/emmathemartian/seal> ]."
+		"Check out the website's source code $[ a: "here" <https://github.com/emmathemartian/emmathemartian.github.io> ] if you are interested!"
+	]
+[ end: "body" ]
