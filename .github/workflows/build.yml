@@ -31,8 +31,9 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Dependencies
         run: |
-          sudo luarocks install --server=https://luarocks.org/dev seal
-          sudo luarocks install fennel
+          apk add luarocks
+          luarocks install --server=https://luarocks.org/dev seal
+          luarocks install fennel
       - name: Build
         run: sh build.sh
       - name: Upload artifact
