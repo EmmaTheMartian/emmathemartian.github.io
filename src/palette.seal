@@ -1,7 +1,6 @@
 [ templates.page: "Palette" ]
-
-	[ nav ]
-
+[ nav ]
+[ begin: main ]
 	[ secret: "palette" ]
 
 	[ p: "This secret is boring, but whatever. It's the colour palette for my website and my sona" ]
@@ -36,5 +35,5 @@
 	[ end ]
 
 	[ undef: table-row ]
-
+[ end ]
 [ templates.endpage ]

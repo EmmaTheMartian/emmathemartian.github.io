@@ -1,7 +1,6 @@
 [ templates.page: "Contact" ]
-
-	[ nav ]
-
+[ nav ]
+[ begin: main ]
 	[ h1: "Contact" ]
 	[ p: "I'm not on much social media, and the ones that I rarely check those that I do have accounts on." ]
 
@@ -16,5 +15,5 @@
 	[ p: "* I do not check these often, prefer another method of contact." ]
 	[ p: "I am most active on Discord, so I recommend DM'ing me or pinging me somewhere to get my attention." ]
 	[ p: "I am all over the place in the Modded Minecraft community, so if you are too, I almost definitely have a common server with you." ]
-
+[ end ]
 [ templates.endpage ]

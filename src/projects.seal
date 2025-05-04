@@ -1,7 +1,6 @@
 [ templates.page: "Projects" ]
-
-	[ nav ]
-
+[ nav ]
+[ begin: main ]
 	[ h1: "Projects" ]
 	[ p: "I keep some projects on Codeberg and some on GitHub." ]
 	[ p: "Why? I started migrating at some point and have not finished quite yet." ]
@@ -36,5 +35,5 @@
 			[ td: "Not feature-complete but archived" ]
 		[ end ]
 	[ end ]
-
+[ end ]
 [ templates.endpage ]

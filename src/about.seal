@@ -1,7 +1,6 @@
 [ templates.page: "Projects" ]
-
-	[ nav ]
-
+[ nav ]
+[ begin: main ]
 	[ h1: "About Me" ]
 
 	[ p: "Oooo you're curious about me :3. Well, I'm Emmeline! You can also just call me Emma" ]
@@ -161,5 +160,5 @@
 	[ hr ] [ h2: "The End" ]
 	[ p: "Wait did you actually read everything here???" ]
 	[ p: "Anyway, if there's anything else you want to know about me then you can ask me personally! Don't worry, I don't bite :3" ]
-
+[ end ]
 [ templates.endpage ]

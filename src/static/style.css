@@ -1,6 +1,7 @@
 :root {
 	/* Palette */
-	--white: #EBE3E4;
+	--white: #EFEFEF;
+	--white-1: #EBE3E4;
 	--black: #17181F;
 
 	--green: #B7E57F;
@@ -23,21 +24,21 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--bg: var(--white);
+		--bg: var(--white-1);
 		--fg: var(--black);
-		--accent: var(--yellow);
-		--accent-2: var(--deep-yellow);
-		--link: var(--deep-blue);
-		--link-hover: var(--blue);
+		--accent: var(--sage);
+		--accent-2: var(--deep-blue);
+		--link: #0F529A;
+		--link-hover: #09427f;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bg: var(--black);
-		--fg: var(--white);
+		--fg: var(--white-1);
 		--accent: var(--pink);
-		--accent-2: var(--deep-pink);
+		--accent-2: var(--yellow);
 		--link: var(--blue);
 		--link-hover: var(--deep-blue);
 	}
@@ -75,7 +76,7 @@ nav {
 	border-bottom: 1px solid var(--accent);
 }
 
-.footer {
+footer {
 	justify-self: flex-end;
 	align-self: flex-end;
 }
