@@ -1,0 +1,19 @@
+[ templates.page: "Index" ]
+
+	[ nav ]
+
+	[ h1: "Hai!" ]
+	[ p: "I'm Emma :D" ]
+	[ p: "I'm a programmer who enjoys creating tools, applications, and learning. I " ]
+
+	[ p:
+		"Here's something neat about this site: I dislike writing HTML/CSS/JS but do like writing websites, the solution? Simple: ditch the stuff I don't like! I wrote this website with "
+		"$[ a: "Seal" <https://github.com/emmathemartian/seal> ], "
+		"$[ a: "Fennel" <https://fennel-lang.org> ], and "
+		"$[ a: "Moonscript" <https://moonscript.org> ]."
+	]
+	[ p: "Check out the website's source code $[ a: "here" <https://github.com/emmathemartian/emmathemartian.github.io> ] if you are interested!" ]
+
+	[ p: "Psst, there are a few secrets on my site, good luck finding them! :3 (looking at the site's repo is cheating!)" ]
+
+[ templates.endpage ]

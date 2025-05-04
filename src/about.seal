@@ -1,0 +1,165 @@
+[ templates.page: "Projects" ]
+
+	[ nav ]
+
+	[ h1: "About Me" ]
+
+	[ p: "Oooo you're curious about me :3. Well, I'm Emmeline! You can also just call me Emma" ]
+	[ p: "Please note: this information is just me info dumping about my interests but is not comprehensive nor in complete detail. " ]
+	[ p: "If you want more details about me or one of my interests, $[ a: "contact" </contact/> ] me and ask! :D" ]
+	[ p: "Some random things about me that do not really fit into any other categories:" ]
+	[ ul:
+		"My MBTI is INTJ-T"
+		"My favourite drink is hot chocolate, then lemonade as a close second. I don't drink anything carbonated and I very rarely drink anything caffeinated"
+		"I love fog, rain, and snow. Calm sunny days with a breeze are also comforting"
+		"My favourite font is $[ a: "Miracode" <https://github.com/IdreesInc/Miracode> ]"
+		"My favourite colours are <div class='mini-swash' style='background-color:var(--yellow)'></div> yellow and <div class='mini-swash' style='background-color:var(--pink)'></div> pink"
+	]
+
+	[ hr ] [ h2: "Games" ]
+	[ p: "I primarily play modded Minecraft, Terraria, and assorted rhythm games." ]
+	[ p: "I enjoy automation/logistics (modded Minecraft and Satisfactory) and a nice challenge (modded Terraria and rhythm games)." ]
+	[ p: "As of writing this, I've been playing Terraria with the Infernum mod. It has been extremely difficult though enjoyable." ]
+	[ details ]
+		[ summary: "Favourite Games (List Form)" ]
+		[ p: "<strong>Favourites</strong>" ]
+		[ ul:
+			"Modded Minecraft"
+			"Beat Saber"
+			"Portal"
+			"Project Sekai"
+			"Terraria"
+			"Minecraft Beta 1.7.3"
+			"Rhythia"
+			"Balatro"
+			"Aloft"
+		]
+		[ p: "<strong>Likes</strong>" ]
+		[ ul:
+			"Forager"
+			"SNKRX"
+			"Borderlands 2"
+			"Stardew Valley"
+			"Satisfactory"
+			"Haste"
+			"Factorio"
+		]
+	[ end ]
+
+	[ hr ] [ h2: "Music" ]
+	[ p: "I primarily listen to EDM (+subgenres), 2000s alternative rock, emo, metal, and indie rock." ]
+	[ p: "I also enjoy Vocaloid music, for the 2-ish Vocaloid-enjoyers reading this, my favourites are GUMI, Flower, Teto, and Len." ]
+	[ p: "I like to collect my favourite albums on vinyl too :3" ]
+	[ p: "As for genres that I dislike: country. Most other genres I either enjoy or am neutral about." ]
+	[ p: "My favourite songs are Old Yellow Bricks by Arctic Monkeys and Looking For Edge Of Ground by Camellia." ]
+	[ details ]
+		[ summary: "Favourite Artists (ordered alphabetically)" ]
+		[ ul:
+			"Arctic Monkeys"
+			"Bullet for my Valentine"
+			"Camellia"
+			"Cjbeards"
+			"Colbreakz"
+			"Creo"
+			"Dirty Palm"
+			"Fall Out Boy"
+			"femtanyl"
+			"hkmori"
+			"Kotori"
+			"KSHMR"
+			"My Chemical Romance"
+			"Paramore"
+			"Senses Fail"
+			"SOTAREKO"
+			"STOMACH BOOK"
+			"STYXVII"
+			"The Amity Affliction"
+			"Three Days Grace"
+			"Two Door Cinema Club"
+		]
+	[ end ]
+
+	[ hr ] [ h2: "Visual Media" ]
+	[ p: "I don't watch too many movies, but I do love Lord of the Rings (the books are better though in my opinion)" ]
+	[ p: "Lilo and Stitch and Big Hero 6 are my favourite Disney films. I have... a lot of Stitch merchandise..." ]
+	[ p: "I almost never watch cable TV (I don't really watch anything at all on TVs), though I do watch Netflix occasionally." ]
+	[ p: "Ultimately, when I watch visual media, I'm typically watching something related to my interests, which you're reading about now!" ]
+
+	[ hr ] [ h2: "Programming" ]
+	[ p: "I primarily work in V, C, Rust, Kotlin, and Java. I use the latter only for Minecraft modding and the former three for most of my other projects." ]
+	[ p: "I don't particularly like Java but since I've used it so much, I have grown to suck it up and deal with it anyway XD" ]
+	[ p: "My favourite languages are C, V, and Lua (+Fennel and Moonscript)" ]
+	[ p: "I am most experienced with Python, as it was my first language and I still use it sometimes. I mostly just use it for small CLI apps and prototypes nowadays though." ]
+	[ p: "C++ is my least favourite language. I despise its standard library with a passion, and not to mention the syntax..." ]
+	[ p: "I quite like niche, small, and/or new languages. Lua variants (Fennel, Moonscript, Teal, etc) are some of my favourites of these." ]
+	[ br ]
+	[ p: "My programming style tends to bother some people, I like allman indentation and I use tabs instead of spaces. In my editors, I configure tabs to have a width of 8 spaces." ]
+	[ p: "I primarily use VSCodium, although I use IDEA for Minecraft modding. I also use Neovim quite often" ]
+	[ br ]
+	[ details ]
+		[ summary: "Favourite/Liked/Disliked Languages" ]
+		[ p: "<strong>Favourites</strong>" ]
+		[ ul:
+			"C"
+			"V"
+			"Lua"
+			"Fennel"
+			"Moonscript"
+			"Sea (biased)"
+		]
+		[ p: "<strong>Likes</strong>" ]
+		[ ul:
+			"Rust"
+			"Python"
+			"Kotlin"
+			"Nim"
+			"C#"
+		]
+		[ p: "<strong>Neutral</strong>" ]
+		[ ul:
+			"Java"
+		]
+		[ p: "<strong>Dislikes</strong>"]
+		[ ul:
+			"JavaScript"
+			"C++"
+		]
+	[ end ]
+
+	[ hr ] [ h2: "Minecraft" ]
+	[ p: "I do quite a lot of Minecraft modding and play it a good bit too. Just as my favourite game genres, I like automation and logistics in Minecraft too." ]
+	[ p: "GregTech and IndustrialCraft 2 are my favourite mods. Psi and Hex Casting are two other favourites of mine." ]
+	[ p: "I have a love-hate relationship with Create. I love the mod itself but dislike its recipes and progression. Though that's likely because I'm so used to the microcrafting and challenges of GergTech." ]
+	[ p: "Immersive Engineering and Botania are also really cool :3" ]
+	[ p: "I'm iffy with Mekanism. In a pack where there are no other major tech mods, it's a lot of fun. Though when put in a modpack with other mods, it becomes very overpowered and difficult to balance properly." ]
+	[ br ]
+	[ p: "I use a handful of keybinds that people tend to find really weird XD. I use <kbd>E</kbd> for use and place block, <kbd>Tab</kbd> for my inventory, <kbd>Mouse 4</kbd> for crouch, and <kbd>Mouse 5</kbd> for sprint." ]
+
+	[ hr ] [ h2: "Assorted Interests and Hobbies" ]
+	[ p: "I enjoy astronomy, psychology, world building, linguistics, embroidery, and reading." ]
+	[ p: "I make conlangs pretty often too, most often for my worlds :3" ]
+	[ p: "My favourite book genres are dystopian and fantasy. 1984 by George Orwill is my favourite book. Ender's Game by Orson Scott Card and The Hitchhiker's Guide to the Galaxy by Douglas Adams are also really good." ]
+
+	[ hr ] [ h2: "Emoticons and Emojis" ]
+	[ p: "You've probably noticed that I use a lot of emoticons, primarily:" ]
+	[ ul:
+		"XD"
+		";-;"
+		";~;"
+		":D"
+		">:D"
+		"D:"
+		":P"
+		":p"
+		":O"
+		":o"
+		":3"
+		">:3"
+	]
+	[ p: "I typically use them quite often since they help me \"control\" the tone of my messages." ]
+
+	[ hr ] [ h2: "The End" ]
+	[ p: "Wait did you actually read everything here???" ]
+	[ p: "Anyway, if there's anything else you want to know about me then you can ask me personally! Don't worry, I don't bite :3" ]
+
+[ templates.endpage ]

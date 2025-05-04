@@ -27,21 +27,17 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Setup V
-        uses: vlang/setup-v@v1.3
-        with:
-          stable: true
       - name: Install Dependencies
         run: |
-          v install --git https://github.com/emmathemartian/vsg &&
-          mkdir -p ~/.vmodules/emmathemartian/ &&
-          mv ~/.vmodules/vsg ~/.vmodules/emmathemartian/vsg
+          sudo apt install -y luarocks
+          sudo luarocks install --server=https://luarocks.org/dev seal
+          sudo luarocks install fennel
       - name: Build
-        run: v run .
+        run: sh build.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'build'
+          path: "build"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
