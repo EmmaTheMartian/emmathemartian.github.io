@@ -1,7 +1,6 @@
 [ templates.page: "Index" ]
-
-	[ nav ]
-
+[ nav ]
+[ begin: main ]
 	[ h1: "Hai!" ]
 	[ p: "I'm Emma :D" ]
 	[ p: "I'm a programmer who enjoys creating tools, applications, and learning. I " ]
@@ -15,5 +14,5 @@
 	[ p: "Check out the website's source code $[ a: "here" <https://github.com/emmathemartian/emmathemartian.github.io> ] if you are interested!" ]
 
 	[ p: "Psst, there are a few secrets on my site, good luck finding them! :3 (looking at the site's repo is cheating!)" ]
-
+[ end ]
 [ templates.endpage ]
