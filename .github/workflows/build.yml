@@ -31,8 +31,7 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Dependencies
         run: |
-          apk add git
-          apk add luarocks
+          apk add git gcc luarocks
           luarocks install --server=https://luarocks.org/dev seal
           luarocks install fennel
       - name: Build
