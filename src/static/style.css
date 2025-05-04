@@ -67,17 +67,11 @@ body {
 }
 
 nav {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	justify-content: start;
 	gap: 12px;
 
 	width: 100%;
 	padding: 8px;
 	margin-bottom: 18px;
-	padding-left: 8px;
-	padding-right: 8px;
 	border-bottom: 1px solid var(--accent);
 }
 
@@ -91,8 +85,6 @@ code {
 
 	padding-left: 4px;
 	padding-right: 4px;
-
-	border-radius: 2px;
 }
 
 a, a:visited {
