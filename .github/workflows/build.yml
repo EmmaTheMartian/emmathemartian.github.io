@@ -22,7 +22,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     container:
-      image: nickblah/lua:5.4.7-luarocks-alpine
+      image: nickblah/lua:5.4.7-luarocks-alpine3.21
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,9 +31,9 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Dependencies
         run: |
-          apk add git gcc libc-dev lua-5.4-dev luarocks5.4 make
-          luarocks-5.4 install --server=https://luarocks.org/dev seal
-          luarocks-5.4 install fennel
+          apk add git gcc libc-dev make
+          luarocks install --server=https://luarocks.org/dev seal
+          luarocks install fennel
       - name: Build
         run: sh build.sh
       - name: Upload artifact
