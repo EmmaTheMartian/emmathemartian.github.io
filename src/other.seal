@@ -1,14 +1,8 @@
-[ begin: "head" ]
-	[ title: "Emma's Website" ]
-[ end: "head" ]
+[ templates.page: "Other" ]
 
-[ begin: "body" ]
-	[ nav:
-		"index" </index/>
-		"about" </about/>
-		"contact" </contact/>
-		"projects" </projects/>
-	]
+	[ nav ]
+
+	[ secret: "other" ]
 
 	[ p: "welcome to the other page" ]
 	[ p: "no, there is not anything to do here" ]
@@ -16,4 +10,5 @@
 	[ p: "Other: \"Did you know that Turquoise is considered the best colour\"" ]
 	[ p: "Me: \"I have never heard of this\"" ]
 	[ p: "Other: \"It's $[ em: "cyantifically" ] proven\"" ]
-[ end: "body" ]
+
+[ templates.endpage ]

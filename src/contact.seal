@@ -1,0 +1,20 @@
+[ templates.page: "Contact" ]
+
+	[ nav ]
+
+	[ h1: "Contact" ]
+	[ p: "I'm not on much social media, and the ones that I rarely check those that I do have accounts on." ]
+
+	[ ul:
+		"Discord: <code>@emmathemartian</code> (send me the word \"glados\" so that I can differentiate from spam messages!)"
+		"Email: <code>emmathemartian@gmail.com</code>"
+		"$[ a: "GitHub" <https://github.com/EmmaTheMartian> ]"
+		"$[ a: "Codeberg" <https://codeberg.org/EmmaTheMartian> ]"
+		"$[ a: "GitLab*" <https://gitlab.com/EmmaTheMartian> ]"
+		"$[ a: "Mastodon*" <https://gaygeek.social/@EmmaTheMartian> ]"
+	]
+	[ p: "* I do not check these often, prefer another method of contact." ]
+	[ p: "I am most active on Discord, so I recommend DM'ing me or pinging me somewhere to get my attention." ]
+	[ p: "I am all over the place in the Modded Minecraft community, so if you are too, I almost definitely have a common server with you." ]
+
+[ templates.endpage ]

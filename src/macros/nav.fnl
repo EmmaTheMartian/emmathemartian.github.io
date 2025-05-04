@@ -1,27 +1,18 @@
-(fn _panic [msg]
-  (print (.. "error: " msg))
-  (os.exit 1))
+(local nav (require "data.nav"))
 
-(fn [tokens]
-  "Creates a navigation bar.
-  Syntax: [nav: \"Link Text\" </link/url> \"Another link text\" </another/link/url>]"
-
+(fn [_tokens]
   (var html "<nav>")
-  (var i 1)
-  (var token tokens.1)
 
-  (while (<= i (# tokens))
-    (set token (. tokens i))
-    (set i (+ i 1))
-    (if (= token.kind "string")
-      (let [text token.text]
-        (set token (. tokens i))
-        (set i (+ i 1))
-        (if (= token.kind "link")
-          (set html (.. html "<a href=\"" token.text "\">" text "</a>"))
-          (_panic (.. "error: expected link but got " token.kind " (text: `" token.text "`)"))))
-      (_panic (.. "error: expected string but got " token.kind " (text: `" token.text "`)"))))
+  (local links {})
+  (each [_ n (ipairs nav)]
+    (table.insert links (string.format "<a href=\"%s\">%s</a>" n.url n.name)))
 
-  (.. html "</nav>")
+  (local end (# links))
+  (each [i a (ipairs links)]
+    (if (= i end)
+      (set html (.. html a))
+      (set html (.. html a " - "))))
+
+  (set html (.. html "</nav>"))
 
   html)
