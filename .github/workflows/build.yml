@@ -1,5 +1,7 @@
 name: Build and deploy content to Pages
 
+image: nickblah/lua:5.4.7-luarocks-alpine
+
 on:
   push:
     branches: ["main"]
@@ -27,12 +29,8 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - uses: leafo/gh-actions-lua@v11
-        with:
-          luaVersion: "5.4.7"
       - name: Install Dependencies
         run: |
-          sudo apt install -y luarocks
           sudo luarocks install --server=https://luarocks.org/dev seal
           sudo luarocks install fennel
       - name: Build
