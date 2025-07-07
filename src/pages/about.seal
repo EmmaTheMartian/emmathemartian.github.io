@@ -1,4 +1,4 @@
-[ templates.page: "Projects" ]
+[ templates.page: "About Me" ]
 [ nav ]
 [ begin: main ]
 	[ h1: "About Me" ]
@@ -26,22 +26,22 @@
 			"Modded Minecraft"
 			"Beat Saber"
 			"Portal"
-			"Project Sekai"
 			"Terraria"
 			"Minecraft Beta 1.7.3"
-			"Rhythia"
 			"Balatro"
-			"Aloft"
 		]
 		[ p: "<strong>Likes</strong>" ]
 		[ ul:
+			"Rhythia"
+			"Factorio"
 			"Forager"
+			"Project Sekai"
+			"Aloft"
 			"SNKRX"
 			"Borderlands 2"
 			"Stardew Valley"
 			"Satisfactory"
 			"Haste"
-			"Factorio"
 		]
 	[ end ]
 
@@ -66,7 +66,7 @@
 			"hkmori"
 			"Kotori"
 			"KSHMR"
-			"My Chemical Romance"
+			"Ludicin"
 			"Paramore"
 			"Senses Fail"
 			"SOTAREKO"
@@ -75,6 +75,7 @@
 			"The Amity Affliction"
 			"Three Days Grace"
 			"Two Door Cinema Club"
+			"Yellowcard"
 		]
 	[ end ]
 
@@ -108,19 +109,20 @@
 		]
 		[ p: "<strong>Likes</strong>" ]
 		[ ul:
-			"Rust"
-			"Python"
-			"Kotlin"
 			"Nim"
+			"Java"
 			"C#"
 		]
 		[ p: "<strong>Neutral</strong>" ]
 		[ ul:
-			"Java"
+			"Kotlin"
+			"Python"
+			"Rust"
 		]
 		[ p: "<strong>Dislikes</strong>"]
 		[ ul:
 			"JavaScript"
+			"TypeScript"
 			"C++"
 		]
 	[ end ]
@@ -128,7 +130,7 @@
 	[ hr ] [ h2: "Minecraft" ]
 	[ p: "I do quite a lot of Minecraft modding and play it a good bit too. Just as my favourite game genres, I like automation and logistics in Minecraft too." ]
 	[ p: "GregTech and IndustrialCraft 2 are my favourite mods. Psi and Hex Casting are two other favourites of mine." ]
-	[ p: "I have a love-hate relationship with Create. I love the mod itself but dislike its recipes and progression. Though that's likely because I'm so used to the microcrafting and challenges of GergTech." ]
+	[ p: "I have a love-hate relationship with Create. I love the mod itself but dislike its recipes and progression. Though that's likely because I'm so used to the microcrafting and challenges of GregTech." ]
 	[ p: "Immersive Engineering and Botania are also really cool :3" ]
 	[ p: "I'm iffy with Mekanism. In a pack where there are no other major tech mods, it's a lot of fun. Though when put in a modpack with other mods, it becomes very overpowered and difficult to balance properly." ]
 	[ br ]
@@ -142,18 +144,11 @@
 	[ hr ] [ h2: "Emoticons and Emojis" ]
 	[ p: "You've probably noticed that I use a lot of emoticons, primarily:" ]
 	[ ul:
-		"XD"
-		";-;"
-		";~;"
-		":D"
-		">:D"
-		"D:"
-		":P"
-		":p"
-		":O"
-		":o"
-		":3"
-		">:3"
+		":D >:D XD D:"
+		";-; ;~;"
+		":P :p"
+		":O :o"
+		":3 >:3"
 	]
 	[ p: "I typically use them quite often since they help me \"control\" the tone of my messages." ]
 

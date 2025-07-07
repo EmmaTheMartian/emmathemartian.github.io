@@ -24,7 +24,7 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--bg: var(--white-1);
+		--bg: var(--white);
 		--fg: var(--black);
 		--accent: var(--sage);
 		--accent-2: var(--deep-blue);
@@ -98,7 +98,12 @@ a:hover {
 	color: var(--link-hover);
 }
 
-h1, h2, h3, h4, h5, h6, p, span, ul, ol {
+h1, h2, h3 {
+	margin-top: 16px;
+	margin-bottom: 10px;
+}
+
+h4, h5, h6, p, span, ul, ol {
 	margin-top: 6px;
 	margin-bottom: 6px;
 }

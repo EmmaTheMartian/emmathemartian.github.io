@@ -8,14 +8,17 @@ class Project
 
 -- Shorthands
 GITHUB = 'https://github.com/emmathemartian/'
+SEA_GITHUB = 'https://github.com/sea-lang/'
+NEBULA_GITHUB = 'https://github.com/nebula-modding/'
 CODEBERG = 'https://codeberg.org/emmathemartian/'
 
-A = 'Active'
-F = 'Finished'
-AWIP = 'Active WIP'
-HOLD = 'On Hold'
+ACTIVE = 'Active'
+FINISHED = 'Finished'
+ACTIVE_WIP = 'Active WIP'
+ON_HOLD = 'On Hold'
 
 MC_MOD = 'Minecraft Mod'
+MC_API = 'Minecraft Library'
 MC_MODPACK = 'Minecraft Modpack'
 API = 'Library/API'
 APP = 'Application'
@@ -28,64 +31,78 @@ export PROJECTS = {
 		'Sea',
 		LANGUAGE,
 		'A general-purpose language designed for low-level-capable, performant, and portable code.',
-		GITHUB .. 'sea',
-		AWIP
+		SEA_GITHUB .. 'sea',
+		ACTIVE_WIP
 	)
 	Project(
 		'Seal',
 		LANGUAGE,
 		'A meta-programmable markup language designed for making stylish and simple static sites.',
 		GITHUB .. 'seal',
-		AWIP
+		ACTIVE
 	)
 	Project(
 		'MineFactorial',
 		MC_MOD,
 		'MineFactory revived and reimagined for modern versions',
 		GITHUB .. 'minefactorial',
-		AWIP
+		ACTIVE_WIP
+	),
+	Project(
+		'Cygnus',
+		MC_MOD,
+		'A space mod aiming to make exploring space fun and unique',
+		NEBULA_GITHUB .. 'cygnus',
+		ACTIVE_WIP
+	),
+	Project(
+		'Lazuli',
+		MC_API,
+		'A personal modding library made to make modding Minecraft a little less tedious',
+		GITHUB .. 'lazuli',
+		ACTIVE_WIP
 	),
 	Project(
 		'ReTekkit',
 		MC_MODPACK,
 		'Tekkit revived and reimagined for modern versions',
 		'https://github.com/retekkit/retekkit',
-		AWIP
+		ACTIVE_WIP
 	),
 	Project(
 		'beep',
 		APP,
 		'a self-hosted mini-blogger.',
 		GITHUB .. 'beep',
-		AWIP
+		ACTIVE_WIP
 	),
 	Project(
 		'Clockwork',
 		TOOL,
 		'A language-agnostic build tool',
 		GITHUB .. 'clockwork',
-		A
+		FINISHED
 	),
 	Project(
 		'Maple',
 		API,
 		'Because JSON was overkill',
 		GITHUB .. 'maple',
-		A
+		FINISHED
 	),
 	Project(
 		'Raylib for V',
 		API,
 		'Official, auto-generated, up-to-date Raylib bindings for V',
 		'https://github.com/vlang/raylib-for-v',
-		A
+		ACTIVE
 	),
 	Project(
 		'Arcane',
 		MC_MOD,
 		'A Minecraft mod which allows you to harness natural Aura around the world',
 		GITHUB .. 'arcane',
-		HOLD .. ' (rewrite in progress)'
+		ON_HOLD .. ' (rewrite in progress)'
 	)
 	-- Codeberg projects
 	Project(
@@ -93,21 +110,21 @@ export PROJECTS = {
 		API .. ' ' .. MC_MOD,
 		'A data-generation library for NeoForge',
 		CODEBERG .. 'dapper',
-		A
+		ACTIVE
 	),
 	Project(
 		'Regolith',
 		API .. ' ' .. MC_MOD,
 		'Cross platform bulk registration library for Minecraft',
 		CODEBERG .. 'regolith',
-		A
+		ACTIVE
 	),
 	Project(
 		'mrrp',
 		APP,
 		'Modrinth Random Project Finder',
 		CODEBERG .. 'mrrp',
-		F
+		FINISHED
 	),
 }
 

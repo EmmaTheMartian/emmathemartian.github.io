@@ -1,0 +1,66 @@
+[ templates.page: "Thoughts - (Neo)Forge vs Fabric" ]
+[ nav ]
+[ begin: main ]
+	[ a: "Back to /thoughts/" </thoughts/> ]
+
+	[ h1: "(Neo)Forge vs Fabric" ]
+
+	[ p: "This is one of my hotter takes. I think that (Neo)Forge and Fabric are equally bad/good mod loaders." ]
+	[ p:
+		"People often say that Fabric is the \"lighter\" loader, but in
+		reality that's very much not the case anymore. They both have a
+		plethora of performance mods, and most of them are xplat now too.
+		Forge performance especially improved post 1.15, and the two
+		basically launch and run at the same speed in most cases."
+	]
+	[ p:
+		"I also see people saying that Fabric is lighter because it
+		doesn't package the library with it, however this actually makes
+		it *heavier* if you think about it. The Fabric API is packaged
+		into many smaller modules, which I've seen people jar-in-jar
+		before (Sodium JiJs part of the library). This is utterly stupid,
+		*every* single modpack on Fabric is going to use FAPI, meaning
+		that JiJ'ing it is just wasting resources."
+	]
+	[ p:
+		"Though my major issue with FAPI is the modular structure of it.
+		Sure, a modular structure is nice... until you think about the
+		fact that it's distributed monolithically for users *and*
+		developers. Nearly every Fabric developer depends on the whole
+		FAPI and not modules since it's a million times more convenient.
+		The API being split into multiple modules just feels really
+		annoying to manage. Then again, I don't work on the FAPI, so I
+		could very well be mistaken on the ease-of-development benefit
+		that may or may not exist."
+	]
+	[ p:
+		"As for (Neo)Forge, I also think that it has issues. Notably,
+		the event bus... I don't like \"magic code\" (macros,
+		annotations, etc), and the Forge event bus is literally that. I
+		*do* however like that the event bus provides events for most of
+		the places where I would otherwise need to mixin, which means
+		that mod compatibility is much more likely. On the other hand,
+		there are great tools for developing mixins now (mc-dev and mods
+		such as mixin trace), which help significantly... until someone
+		decides to @Overwrite where they REALLY didn't need to. That's a
+		different issue though."
+	]
+	[ p:
+		"In terms of modding, both loaders are equally bad/good, and
+		it's really just personal preference. I primarily mod on
+		NeoForge since that's where I have the most experience and am
+		most comfortable, but I can develop on Fabric too."
+	]
+	[ p:
+		"In terms of modpacking, NeoForge has more potential right now
+		*in my opinion*. Connector helps significantly in this, however
+		opposite projects such as Kilt may make each loader perfectly
+		balanced (as all things should be /reference). Ultimately, when
+		I am modpacking, I use whichever loader provides the core mods
+		for my modpack. I.e, if I'm making a tech pack around GTCEuM,
+		I'll use NeoForge 1.21.1, since that's the version that the mod
+		targets. For a Spectrum pack, I'll use Fabric 1.21.1 for the
+		same reason."
+	]
+[ end ]
+[ templates.endpage ]

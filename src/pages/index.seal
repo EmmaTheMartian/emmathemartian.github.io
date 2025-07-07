@@ -1,0 +1,26 @@
+[ templates.page: "Index" ]
+[ nav ]
+[ begin: main ]
+	[ h1: "Hiya! I'm Emmeline" ]
+
+	[ p: "I'm a programmer who enjoys developing compilers/interpreters, games, APIs/tools, and learning." ]
+
+	[ br ]
+
+	[ p: "If you're looking for contact information, you can find that $[ a: "here" </contact/> ]." ]
+	[ p: "If you're looking for my projects, you can find those $[ a: "here" </projects/> ]." ]
+	[ p: "Otherwise, you can find the rest of the pages using the navigation bar above." ]
+
+	[ br ]
+
+	[ p:
+		"Here's something neat about this site: I dislike writing
+		HTML/CSS/JS but do like writing websites, the solution? Simple:
+		ditch the stuff I don't like! I wrote this website with "
+		"$[ a: "Seal" <https://github.com/emmathemartian/seal> ], "
+		"$[ a: "Fennel" <https://fennel-lang.org> ], and "
+		"$[ a: "Moonscript" <https://moonscript.org> ]."
+	]
+	[ p: "Check out the website's source code $[ a: "here" <https://github.com/emmathemartian/emmathemartian.github.io> ] if you are interested!" ]
+[ end ]
+[ templates.endpage ]

@@ -46,13 +46,58 @@ end
 
 -- Pages
 local pages = {
-	['index.seal'] = 'index.html'
+	-- Handle 404.seal manually instead of in walk()
+	['./pages/404.seal'] = '404.html'
 }
-for path in lfs.dir('.') do
-	if not path:match('^.*%.seal$') or path == 'index.seal' then
-		goto continue
+
+local function walk(p)
+	for path in lfs.dir(p) do
+		-- Skip . and ..
+		if path == "." or path == ".." then
+			goto continue
+		end
+
+		local file = p .. '/' .. path
+		-- Recurse into subdirectories
+		if lfs.attributes(file).mode == "directory" then
+			walk(file)
+		end
+
+		-- Skip non-.seal files
+		if not path:match('^.*%.seal$') then
+			goto continue
+		end
+
+		-- Skip files that have already been handled
+		for key, _ in pairs(pages) do
+			if key == file then
+				goto continue
+			end
+		end
+
+		-- Get the output path (excluding ./output/)
+		local output = file:gsub('^%./pages/', ''):gsub('%.seal$', '') .. '/index.html'
+		if path == "index.seal" then
+			-- Pages called index.seal will not have a subdirectory
+			-- made for them automatically.
+			output = output:gsub("index/index%.html$", "index.html")
+		end
+
+		-- Add the page for compilation
+		pages[file] = output
+
+		-- Get the directory that the compiled HTML file would be put at
+		-- so that we can mkdir to prevent Seal from trying to make
+		-- files in non-existent directories.
+		local dir = 'output/' .. output:gsub("index%.html$", "")
+		if not lfs.attributes(dir) then
+			lfs.mkdir(dir)
+		end
+
+		::continue::
 	end
-	pages[path] = path:gsub('%.seal$', '') .. '/index.html'
-	::continue::
 end
+
+walk("./pages")
+
 return pages

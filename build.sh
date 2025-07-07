@@ -1,14 +1,14 @@
 #!/usr/bin/env sh
 set -e
 
+if [ -e "build" ]
+then
+	rm -rf build
+fi
+
 cd src
 mkdir -p output
 
 seal .
-
-if [ -e "../build" ]
-then
-	rm -rf ../build
-fi
 
 mv output ../build
