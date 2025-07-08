@@ -98,16 +98,6 @@ a:hover {
 	color: var(--link-hover);
 }
 
-h1, h2, h3 {
-	margin-top: 16px;
-	margin-bottom: 10px;
-}
-
-h4, h5, h6, p, span, ul, ol {
-	margin-top: 6px;
-	margin-bottom: 6px;
-}
-
 hr {
 	border-top: none;
 	border-left: none;
@@ -123,8 +113,6 @@ ul.favourited-list {
 
 ul.favourited-list>li,
 ul.favourited-list>li>span {
-	margin-top: 8px;
-	margin-bottom: 8px;
 	vertical-align: middle;
 }
 
@@ -169,11 +157,11 @@ summary {
 /* "Mobile Mode" */
 @media only screen and (max-device-width: 600px) {
 	:root {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	body {
-		width: 90%;
+		width: 98%;
 	}
 
 	nav {

@@ -3,7 +3,7 @@
 [ begin: main ]
 	[ h1: "About Me" ]
 
-	[ p: "Oooo you're curious about me :3. Well, I'm Emmeline! You can also just call me Emma" ]
+	[ p: "Hai again, I'm Emmeline! You can also just call me Emma" ]
 	[ p: "Please note: this information is just me info dumping about my interests but is not comprehensive nor in complete detail. " ]
 	[ p: "If you want more details about me or one of my interests, $[ a: "contact" </contact/> ] me and ask! :D" ]
 	[ p: "Some random things about me that do not really fit into any other categories:" ]
@@ -11,13 +11,13 @@
 		"My MBTI is INTJ-T"
 		"My favourite drink is hot chocolate, then lemonade as a close second. I don't drink anything carbonated and I very rarely drink anything caffeinated"
 		"I love fog, rain, and snow. Calm sunny days with a breeze are also comforting"
-		"My favourite font is $[ a: "Miracode" <https://github.com/IdreesInc/Miracode> ]"
+		"My favourite fonts are $[ a: "Miracode" <https://github.com/IdreesInc/Miracode> ] and CaskaydiaCove."
 		"My favourite colours are <div class='mini-swash' style='background-color:var(--yellow)'></div> yellow and <div class='mini-swash' style='background-color:var(--pink)'></div> pink"
 	]
 
 	[ hr ] [ h2: "Games" ]
 	[ p: "I primarily play modded Minecraft, Terraria, and assorted rhythm games." ]
-	[ p: "I enjoy automation/logistics (modded Minecraft and Satisfactory) and a nice challenge (modded Terraria and rhythm games)." ]
+	[ p: "I enjoy automation/logistics (modded Minecraft and Factorio) and a nice challenge (modded Terraria and rhythm games)." ]
 	[ p: "As of writing this, I've been playing Terraria with the Infernum mod. It has been extremely difficult though enjoyable." ]
 	[ details ]
 		[ summary: "Favourite Games (List Form)" ]
@@ -123,7 +123,7 @@
 		[ ul:
 			"JavaScript"
 			"TypeScript"
-			"C++"
+			"C++ (see $[ link: "my thoughts on C++" </thoughts/cplusplus/> ])"
 		]
 	[ end ]
 
@@ -134,7 +134,7 @@
 	[ p: "Immersive Engineering and Botania are also really cool :3" ]
 	[ p: "I'm iffy with Mekanism. In a pack where there are no other major tech mods, it's a lot of fun. Though when put in a modpack with other mods, it becomes very overpowered and difficult to balance properly." ]
 	[ br ]
-	[ p: "I use a handful of keybinds that people tend to find really weird XD. I use <kbd>E</kbd> for use and place block, <kbd>Tab</kbd> for my inventory, <kbd>Mouse 4</kbd> for crouch, and <kbd>Mouse 5</kbd> for sprint." ]
+	[ p: "I use a handful of keybinds that people tend to find really weird: <kbd>E</kbd> for use/place block, <kbd>Tab</kbd> for my inventory, <kbd>Mouse 4</kbd> for crouch, and <kbd>Mouse 5</kbd> for sprint." ]
 
 	[ hr ] [ h2: "Assorted Interests and Hobbies" ]
 	[ p: "I enjoy astronomy, psychology, world building, linguistics, embroidery, and reading." ]
