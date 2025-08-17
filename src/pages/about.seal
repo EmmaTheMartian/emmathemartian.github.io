@@ -18,13 +18,14 @@
 	[ hr ] [ h2: "Games" ]
 	[ p: "I primarily play modded Minecraft, Terraria, and assorted rhythm games." ]
 	[ p: "I enjoy automation/logistics (modded Minecraft and Factorio) and a nice challenge (modded Terraria and rhythm games)." ]
-	[ p: "As of writing this, I've been playing Terraria with the Infernum mod. It has been extremely difficult though enjoyable." ]
+	[ p: "As of writing this, I've been playing Terraria with the Infernum mod. It has been extremely difficult but I've thoroughly enjoyed it so far." ]
 	[ details ]
 		[ summary: "Favourite Games (List Form)" ]
 		[ p: "<strong>Favourites</strong>" ]
 		[ ul:
 			"Modded Minecraft"
 			"Beat Saber"
+			"osu!"
 			"Portal"
 			"Terraria"
 			"Minecraft Beta 1.7.3"
@@ -67,6 +68,7 @@
 			"Kotori"
 			"KSHMR"
 			"Ludicin"
+			"LuLuYam"
 			"Paramore"
 			"Senses Fail"
 			"SOTAREKO"
@@ -84,11 +86,12 @@
 	[ p: "Lilo and Stitch and Big Hero 6 are my favourite Disney films. I have... a lot of Stitch merchandise..." ]
 	[ p: "I almost never watch cable TV (I don't really watch anything at all on TVs), though I do watch Netflix occasionally." ]
 	[ p: "Ultimately, when I watch visual media, I'm typically watching something related to my interests, which you're reading about now!" ]
+	[ p: "I have a list of my favourites and such $[ a: "here" </misc/tv-and-movies/> ]" ]
 
 	[ hr ] [ h2: "Programming" ]
 	[ p: "I primarily work in V, C, Rust, Kotlin, and Java. I use the latter only for Minecraft modding and the former three for most of my other projects." ]
 	[ p: "I don't particularly like Java but since I've used it so much, I have grown to suck it up and deal with it anyway XD" ]
-	[ p: "My favourite languages are C, V, and Lua (+Fennel and Moonscript)" ]
+	[ p: "My favourite languages are C and Lua." ]
 	[ p: "I am most experienced with Python, as it was my first language and I still use it sometimes. I mostly just use it for small CLI apps and prototypes nowadays though." ]
 	[ p: "C++ is my least favourite language. I despise its standard library with a passion, and not to mention the syntax..." ]
 	[ p: "I quite like niche, small, and/or new languages. Lua variants (Fennel, Moonscript, Teal, etc) are some of my favourites of these." ]
@@ -96,19 +99,23 @@
 	[ p: "My programming style tends to bother some people, I like allman indentation and I use tabs instead of spaces. In my editors, I configure tabs to have a width of 8 spaces." ]
 	[ p: "I primarily use VSCodium, although I use IDEA for Minecraft modding. I also use Neovim quite often" ]
 	[ br ]
+	[ p: "Regarding C, I primarily work in C99 with a lot of warnings enabled (-werror -wall -wextra -pedantic -pedantic-errors ...)." ]
+	[ p: "I use C so much because I really just... know it off the top of my head. I don't know the whole standard library, of course, but the syntax and common standard library is really easy for me to use." ]
+	[ p: "What this translates to is: I can sit down and focus on writing code instead of reading docs or searching for answers to language-related problems. Being able to focus so much time to *writing* code is really good." ]
+	[ br ]
 	[ details ]
 		[ summary: "Favourite/Liked/Disliked Languages" ]
 		[ p: "<strong>Favourites</strong>" ]
 		[ ul:
 			"C"
-			"V"
 			"Lua"
-			"Fennel"
-			"Moonscript"
 			"Sea (biased)"
 		]
 		[ p: "<strong>Likes</strong>" ]
 		[ ul:
+			"V"
+			"Fennel"
+			"Moonscript"
 			"Nim"
 			"Java"
 			"C#"

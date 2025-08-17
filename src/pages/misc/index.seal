@@ -1,0 +1,10 @@
+[ templates.page: "Misc" ]
+[ nav ]
+[ begin: main ]
+	[ h1: "Misc Pages" ]
+
+	[ ul:
+		"$[ a: "My TV and Movie Rankings" </misc/tv-and-movies/> ]"
+	]
+[ end ]
+[ templates.endpage ]

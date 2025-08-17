@@ -90,6 +90,7 @@ local function walk(p)
 		-- so that we can mkdir to prevent Seal from trying to make
 		-- files in non-existent directories.
 		local dir = 'output/' .. output:gsub("index%.html$", "")
+		print(dir)
 		if not lfs.attributes(dir) then
 			lfs.mkdir(dir)
 		end

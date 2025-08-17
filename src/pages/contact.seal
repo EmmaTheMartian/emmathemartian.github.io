@@ -3,14 +3,12 @@
 [ begin: main ]
 	[ h1: "Contact" ]
 	[ p: "I'm not on much social media, and the ones that I rarely check those that I do have accounts on." ]
+	[ p: "You may find me out in the wild on other platforms, but aside from the listed ones here I'm mostly inactive." ]
 
 	[ ul:
 		"Discord: <code>@emmathemartian</code> (send me the word \"glados\" so that I can differentiate from spam messages!)"
-		"Email: <code>me@emmelinecoats.com</code>"
 		"$[ a: "GitHub" <https://github.com/EmmaTheMartian> ]"
 		"$[ a: "Codeberg*" <https://codeberg.org/EmmaTheMartian> ]"
-		"$[ a: "GitLab*" <https://gitlab.com/EmmaTheMartian> ]"
-		"$[ a: "Mastodon*" <https://gaygeek.social/@EmmaTheMartian> ]"
 	]
 	[ p: "* I do not check these often, prefer another method of contact." ]
 	[ p: "I am most active on Discord, so I recommend DM'ing me or pinging me somewhere to get my attention." ]
