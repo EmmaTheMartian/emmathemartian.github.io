@@ -21,26 +21,18 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    container:
-      image: nickblah/lua:5.4.7-luarocks-debian
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Install Dependencies
-        run: |
-          apt update
-          apt install -y gcc git make
-          luarocks install --server=https://luarocks.org/dev seal
-          luarocks install fennel
       - name: Build
         run: sh build.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "build"
+          path: "output"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,5 +1,0 @@
-tasks:
-  - init: |
-      apt install -y luarocks
-      luarocks install fennel
-      luarocks install seal

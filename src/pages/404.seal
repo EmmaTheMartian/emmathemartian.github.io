@@ -1,8 +1,0 @@
-[ templates.page: "404" ]
-[ nav ]
-[ begin: main ]
-	[ h1: "Uh Oh ;~;" ]
-	[ p: "This page doesn't exist..."]
-	[ a: "Go to /" </> ]
-[ end ]
-[ templates.endpage ]

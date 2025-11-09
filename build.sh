@@ -1,14 +1,13 @@
 #!/usr/bin/env sh
 set -e
 
-if [ -e "build" ]
+if [ -e "output" ]
 then
-	rm -rf build
+	rm -rf output
+	mkdir -p output
 fi
 
-cd src
-mkdir -p output
+cc src/main.c -Isrc/include/
+./a.out
 
-seal .
-
-mv output ../build
+cp -r src/static/ output/
