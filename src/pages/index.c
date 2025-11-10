@@ -99,6 +99,7 @@ static void p_index()
 	cml("li", "<a href='https://neomojimixer.com/'>Neomojimixer</a> - Neomoji Creator!");
 	cml("li", "<a href='https://quaternions.online/'>Quaternions</a> - Quaternion visualizer");
 	cml("li", "<a href='https://wareya.github.io/webtyler/'>Webtyler</a> - Tile generator tool");
+	cml("li", "<a href='https://ygopro.org/yugioh-card-maker/'>Yu-Gi-Oh Card Maker</a> - Easily the best YGO card maker I've found. Props to my friend, Sock, for making it!");
 	cml_end();
 
 	sep();
