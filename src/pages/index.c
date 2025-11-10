@@ -85,12 +85,13 @@ static void p_index()
 	sep();
 
 	cml("h2", "Cool Albums+Playlists");
+	cml("p", "Peak music you should listen to.");
 	cml_new("ul");
-	cml("li", "<a href='htthttps://youtube.com/playlist?list=PLdkSCrAWCqGYWVj8uT81J3dWxE3sXJqpv'>UNBEATABLE: DEMO TAPES</a>");
+	cml("li", "<a href='https://youtube.com/playlist?list=PLdkSCrAWCqGYWVj8uT81J3dWxE3sXJqpv'>UNBEATABLE: DEMO TAPES</a>");
 	cml("li", "<a href='https://youtu.be/RKybAhTw8iE'>Ninajirachi - I Love My Computer</a>");
 	cml_end();
 
-	sep();
+	cml_noend("br");
 
 	cml("h2", "Cool Sites");
 	cml("p", "Simply a collection of cool websites I've found.");
@@ -107,6 +108,15 @@ static void p_index()
 	button("https://gingershaped.computer", "https://gingershaped.computer/8831/button.png", "ginger's 88x31 button");
 	button("https://violunae.dev", "https://violunae.dev/assets/badges/violunae.png", "violunae.dev");
 	cml_end();
+
+	cml("p", "My Button:");
+	button("https://emmelinecoats.com", "/static/button.png", "emmelinecoats.com");
+	int f = cml_getfmt();
+	cml_setfmt(0);
+	cml_new("pre");
+	cml("code", "&lt;a href=\"https://emmelinecoats.com/\"&gt;\n\t&lt;img src=\"https://emmelinecoats.com/static/button.png\" alt=\"emmelinecoats.com\" width=\"88\" height=\"31\" decoding=\"async\" /&gt;\n&lt;/a&gt;");
+	cml_end();
+	cml_setfmt(f);
 
 	endpage();
 }

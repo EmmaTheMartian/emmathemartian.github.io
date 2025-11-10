@@ -23,6 +23,8 @@ void page(char *title)
 	cml_new("head");
 	cml("title", "Emma's Website - %s", title);
 	cml_noend("link rel='stylesheet' href='/static/style.css'");
+	cml_noend("meta charset='UTF-8'");
+	cml_noend("meta name='viewport' content='width=device-width, initial-scale=1'");
 	cml_end();
 
 	cml_new("body");
@@ -68,11 +70,14 @@ void endpage(void)
 
 void button(char *href, char *src, char *alt)
 {
+	int f = cml_getfmt();
+	cml_setfmt(0);
 	cml_new("span");
 	cml_newf("a class='button-88x31' href=\"%s\"", href);
 	cml_noend("img src=\"%s\" alt=\"%s\" width='88' height='31' decoding='async'", src, alt);
 	cml_end();
 	cml_end();
+	cml_setfmt(f);
 }
 
 #endif
