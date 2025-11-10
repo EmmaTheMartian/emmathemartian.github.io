@@ -105,16 +105,17 @@ static void p_index()
 
 	cml("h2", "My Circle");
 	cml_new("div");
-	button("https://gingershaped.computer", "https://gingershaped.computer/8831/button.png", "ginger's 88x31 button");
-	button("https://violunae.dev", "https://violunae.dev/assets/badges/violunae.png", "violunae.dev");
+	button("https://gingershaped.computer", "https://gingershaped.computer/8831/button.png", "ginger's 88x31 button", 0);
+	button("https://violunae.dev", "https://violunae.dev/assets/badges/violunae.png", "violunae.dev", 1);
+	button("https://conorobrien-foxx.github.io", "https://conorobrien-foxx.github.io/img/button.png", "conor's 88x31 button", 1);
 	cml_end();
 
 	cml("p", "My Button:");
-	button("https://emmelinecoats.com", "/static/button.png", "emmelinecoats.com");
+	button("https://emmelinecoats.com", "/static/button.png", "emmelinecoats.com", 1);
 	int f = cml_getfmt();
 	cml_setfmt(0);
 	cml_new("pre");
-	cml("code", "&lt;a href=\"https://emmelinecoats.com/\"&gt;\n\t&lt;img src=\"https://emmelinecoats.com/static/button.png\" alt=\"emmelinecoats.com\" width=\"88\" height=\"31\" decoding=\"async\" /&gt;\n&lt;/a&gt;");
+	cml("code", "&lt;a href=\"https://emmelinecoats.com/\"&gt;\n\t&lt;img src=\"https://emmelinecoats.com/static/button.png\" alt=\"emmelinecoats.com\" width=\"88\" height=\"31\" decoding=\"async\" style=\"image-rendering:pixelated;\" /&gt;\n&lt;/a&gt;");
 	cml_end();
 	cml_setfmt(f);
 

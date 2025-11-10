@@ -68,13 +68,16 @@ void endpage(void)
 	cml_end();
 }
 
-void button(char *href, char *src, char *alt)
+void button(char *href, char *src, char *alt, int pixelate)
 {
 	int f = cml_getfmt();
 	cml_setfmt(0);
 	cml_new("span");
 	cml_newf("a class='button-88x31' href=\"%s\"", href);
-	cml_noend("img src=\"%s\" alt=\"%s\" width='88' height='31' decoding='async'", src, alt);
+	if (pixelate)
+		cml_noend("img src=\"%s\" alt=\"%s\" width='88' height='31' decoding='async' style='image-rendering:pixelated;'", src, alt);
+	else
+		cml_noend("img src=\"%s\" alt=\"%s\" width='88' height='31' decoding='async'", src, alt);
 	cml_end();
 	cml_end();
 	cml_setfmt(f);
