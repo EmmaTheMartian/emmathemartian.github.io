@@ -89,6 +89,7 @@ static void p_index()
 	cml_new("ul");
 	cml("li", "<a href='https://youtube.com/playlist?list=PLdkSCrAWCqGYWVj8uT81J3dWxE3sXJqpv'>UNBEATABLE: DEMO TAPES</a>");
 	cml("li", "<a href='https://youtu.be/RKybAhTw8iE'>Ninajirachi - I Love My Computer</a>");
+	cml("li", "<a href='https://youtu.be/RDRycy6_WKE'>ESTR0GEM - Worm Party On Sunday</a> - HOW ARE THERE ONLY 516 VIEWS AND 378 SUBSCRIBERS??? Please go listen and support Estr0gem!");
 	cml_end();
 
 	cml_noend("br");
