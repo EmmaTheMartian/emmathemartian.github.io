@@ -20,21 +20,17 @@ static void p_index()
 
 	cml_noend("br");
 
-	cml("p",
-		"Here's a fun fact about this site: I dislike writing HTML, instead, \
-		I wrote this website in C. Yes, C. You can view the site's source code \
-		<a href='https://github.com/emmathemartian/emmathemartian.github.io'>here</a>."
-	);
+	cml("p", "Here's a fun fact about this site: I dislike writing HTML, instead, \
+I wrote this website in C. Yes, C. You can view the site's source code \
+<a href='https://github.com/emmathemartian/emmathemartian.github.io'>here</a>.");
 
 	sep();
 
 	cml("h2", "Software");
 	cml("p", "A list of the software I use.");
-	cml("p",
-		"In the future I plan to reinstall my OS and make it substantially \
-		more minimal. I do use all of this software daily, but I could easily \
-		do without most of it."
-	);
+	cml("p", "In the future I plan to reinstall my OS and make it substantially \
+more minimal. I do use all of this software daily, but I could easily \
+do without most of it.");
 	cml("p", "<strong>Desktop</strong>");
 	cml_new("ul");
 	cml("li", "<a href='https://artixlinux.org/'>Artix Linux</a> - Operating system");

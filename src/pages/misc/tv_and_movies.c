@@ -7,12 +7,14 @@ void p_misc_tvandmovies(void)
 	page("TV and Movies");
 
 	cml("h1", "TV and Movies");
-	cml("p", "I am a major enjoyer of a good movie or series, and I really \
+	cml("p",
+"I am a major enjoyer of a good movie or series, and I really \
 dislike forgetting which things I've already seen. To partially remedy that, I've \
 created this giant list of every TV show, movie, anime, Netflix series, etc that \
 I've watched along with how I liked it!");
 	cml("p", "Also fear not, I will not spoil anything.");
-	cml("p", "Additionally, the ratings I have given are almost entirely \
+	cml("p",
+"Additionally, the ratings I have given are almost entirely \
 arbitrary. I'm just picking numbers as I go :3. I also typically only watch \
 shows that seem really interesting to me, which means there is a bias towards \
 rating them higher.");
@@ -101,7 +103,8 @@ rating them higher.");
 	cml_end();
 
 	cml("h2", "To Finish List");
-	cml("p", "I am pretty notorious amount friend groups for being the one \
+	cml("p",
+"I am pretty notorious amount friend groups for being the one \
 that's really bad about not finishing a series if it doesn't immediately click. \
 That doesn't mean I didn't like it, I just wasn't interested immediately.");
 	cml_new("ul");
