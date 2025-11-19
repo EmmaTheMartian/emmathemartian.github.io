@@ -16,6 +16,7 @@
 #include "pages/projects.c"
 
 #include "pages/misc/index.c"
+#include "pages/misc/gif_collection.c"
 #include "pages/misc/tv_and_movies.c"
 
 #include "pages/thoughts/cplusplus.c"
@@ -54,6 +55,7 @@ int main()
 	build("output/projects/index.html", p_projects);
 
 	build("output/misc/index.html", p_misc_index);
+	build("output/misc/gif-collection/index.html", p_misc_gifcollection);
 	build("output/misc/tv-and-movies/index.html", p_misc_tvandmovies);
 
 	build("output/thoughts/index.html", p_thoughts_index);

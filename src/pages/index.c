@@ -97,6 +97,16 @@ do without most of it.");
 	cml("li", "<a href='https://quaternions.online/'>Quaternions</a> - Quaternion visualizer");
 	cml("li", "<a href='https://wareya.github.io/webtyler/'>Webtyler</a> - Tile generator tool");
 	cml("li", "<a href='https://ygopro.org/yugioh-card-maker/'>Yu-Gi-Oh Card Maker</a> - Easily the best YGO card maker I've found. Props to my friend, Sock, for making it!");
+	cml("li", "<a href='https://flexbox.malven.co/'>Flexbox Cheatsheet</a> - Visual cheatsheet for Flexbox, I use this every time I use flexboxes.");
+	cml_end();
+
+	sep();
+
+	cml("h2", "Libraries");
+	cml("p", "Libraries used to develop this website.");
+	cml_new("ul");
+	cml("li", "<a href='https://www.papaparse.com/'>Papa Parse</a> (<a href='https://mit-license.org/'>MIT</a>) - Used for parsing CSV in /misc/gif-collection.");
+	cml("li", "<a href='https://www.fusejs.io/'>Fuse.js</a> (<a href='https://www.apache.org/licenses/LICENSE-2.0.html'>Apache 2.0</a>) - Used for searching in /misc/gif-collection.");
 	cml_end();
 
 	sep();

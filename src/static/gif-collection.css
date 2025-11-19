@@ -1,0 +1,16 @@
+#collection, #results {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+div.gif {
+	border: 1px solid var(--accent);
+	width: 200px;
+	min-height: 200px;
+	text-align: center;
+}
+
+div.gif>img {
+	border-radius: 4px;
+}

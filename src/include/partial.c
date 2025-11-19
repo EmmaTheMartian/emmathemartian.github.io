@@ -15,16 +15,25 @@ static const char *_nav[] = {
 	NULL,
 };
 
-void page(char *title)
+struct _page_opts
+{
+	void(*header)();
+};
+
+static void _page(char *title, struct _page_opts opts)
 {
 	cml_text("<!DOCTYPE HTML>");
 	cml_new("html lang='en'");
 
 	cml_new("head");
 	cml("title", "Emma's Website - %s", title);
-	cml_noend("link rel='stylesheet' href='/static/style.css'");
 	cml_noend("meta charset='UTF-8'");
 	cml_noend("meta name='viewport' content='width=device-width, initial-scale=1'");
+	cml_noend("link rel='stylesheet' href='/static/style.css'");
+	if (opts.header != NULL)
+	{
+		opts.header();
+	}
 	cml_end();
 
 	cml_new("body");
@@ -47,6 +56,8 @@ void page(char *title)
 
 	cml_new("main");
 }
+
+#define page(name, ...) _page(name, (struct _page_opts){ 0, __VA_ARGS__ })
 
 void endpage(void)
 {

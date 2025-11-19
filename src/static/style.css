@@ -125,6 +125,15 @@ th, td {
 	border: 1px solid var(--accent);
 }
 
+details {
+	border: 1px solid var(--accent);
+	padding: 8px;
+}
+
+summary {
+	cursor: pointer;
+}
+
 .swash {
 	display: inline-block;
 	width: 30px;
@@ -143,15 +152,6 @@ th, td {
 
 .secret {
 	color: var(--accent-2);
-}
-
-details {
-	border: 1px solid var(--accent);
-	padding: 8px;
-}
-
-summary {
-	cursor: pointer;
 }
 
 /* "Mobile Mode" */
