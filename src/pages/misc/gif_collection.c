@@ -46,8 +46,13 @@ me \"tag\" my GIFs for ease-of-searching.");
 	cml("div id='collection'", "");
 	cml_end();
 
+	#if 0 /* prod */
 	cml("script defer type='text/javascript' src='https://unpkg.com/papaparse@5.5.3/papaparse.min.js'", "");
 	cml("script defer type='text/javascript' src='https://unpkg.com/fuse.js@7.1.0/dist/fuse.min.js'", "");
+	#else /* dev */
+	cml("script defer type='text/javascript' src='https://unpkg.com/papaparse@5.5.3/papaparse.js'", "");
+	cml("script defer type='text/javascript' src='https://unpkg.com/fuse.js@7.1.0/dist/fuse.js'", "");
+	#endif
 	cml("script defer type='text/javascript' src='/static/gif-collection.js' onload='main();'", "");
 
 	endpage();

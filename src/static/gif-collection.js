@@ -48,7 +48,7 @@ const create_searcher = () =>
 const populate = () =>
 {
 	const c = document.getElementById('collection');
-	Papa.parse('/static/gif-collection.csv', {
+	Papa.parse(`${window.location.protocol}//${window.location.host}/static/gif-collection.csv`, {
 		worker: true,
 		download: true,
 		header: true,
