@@ -9,12 +9,15 @@ void p_thoughts_cplusplus(void)
 	cml("a href='/thoughts/'", "Back to thoughts");
 
 	cml("h1", "Thoughts on C++");
+	cml_noend("hr");
 
 	cml("p", "I despise C++ for a lot of reasons. I have some reasons that are opinionated and others that are... less so.");
 	cml("p", "I'll start with the more opinionated points, then go to the points I believe are more objective.");
 	cml("p", "Additionally, these are *nitpicks*. A lot of small issues add up to a big issue, in my opinion.");
 
+	cml_noend("br");
 	cml("h2", "Syntactic Shortcomings");
+	cml_noend("hr");
 	cml("p",
 "This is one of the more common reasons that people dislike C++, \
 and for good reason. C++ has a lot of really weird syntaxes that \
@@ -41,7 +44,9 @@ structure instead of making it an OOP structure by default.");
 probably should have been part of &lt;iostream&gt; instead of a \
 new header, &lt;print&gt;. This is just a nitpick, though.");
 
+	cml_noend("br");
 	cml("h2", "Templates fit for a King- er- Turing Machine");
+	cml_noend("hr");
 	cml("p",
 "Okay don't get me wrong, I love polymorphic programming via \
 templates. What I don't like is the complexity of C++ templates. \
@@ -55,7 +60,9 @@ is the right tool for the job.");
 	cml("p", "C++ templates are certainly powerful. They're just... a bit *too* powerful in my opinion.");
 	cml("p", "A double-whammy on templates and syntax: it took the C++ committee 32 years to improve the parser spec to parse <code>&gt;&gt;</code> properly in nested templates (C++11).");
 
+	cml_noend("br");
 	cml("h2", "Can Bitshifts Write Data? (Operator Overloading)");
+	cml_noend("hr");
 	cml("p",
 "This isn't unique to C++, but I'm including it here due to the \
 atrocities of the left bitshift (\"stream write\") operator \
@@ -72,7 +79,9 @@ from a library **or even the language's own standard library**, \
 I don't know what that ASM could look like, and there could very \
 well be a side-effect too that I didn't know about.");
 
+	cml_noend("br");
 	cml("h2", "Memory \"Safety\"");
+	cml_noend("hr");
 	cml("p",
 "C++ provides a variety of different pointer types, shared_ptr, \
 unique_ptr, weak_ptr... they're all useless in my opinion. This \
@@ -88,7 +97,9 @@ different than C++-style casts), or leak memory just like in C. \
 C++ is *not* safer than C, and the false sense of safety that \
 beginners tend to have doesn't help.");
 
+	cml_noend("br");
 	cml("h2", "The Standard Library");
+	cml_noend("hr");
 	cml("p", "I'm no stranger to bad standard libraries. But C++'s really stands out from the rest because it's just *that* bad.");
 	cml("p", "The stdlib of C++ took: (C++ was created in 1979, for reference)");
 	cml_new("ul");
@@ -115,7 +126,9 @@ Franc (236.39 EUR or 276.65 USD as of 07/07/2025). I.e, $553.30 \
 USD to get both. The links above for the ISO/IEC are to the ISO \
 pages where I got the price and the page counts.");
 
+	cml_noend("br");
 	cml("h2", "\"C++ is just better C\"");
+	cml_noend("hr");
 	cml("p",
 "C++ and C are *fundamentally* different languages. C++ aimed to \
 add an OOP paradigm to C, which completely changes how you go \
@@ -123,7 +136,9 @@ about writing code using the language. Their standard libraries \
 are vastly different too. C provides what you *need*, C++'s is \
 sugar on top.");
 
+	cml_noend("br");
 	cml("h2", "Note");
+	cml_noend("hr");
 	cml("p",
 "This page *is* intended for me to explain why I dislike C++, \
 but it is *not* me intending to diss those who use C++. It's a \

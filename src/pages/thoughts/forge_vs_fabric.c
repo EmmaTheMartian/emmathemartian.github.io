@@ -9,6 +9,7 @@ void p_thoughts_forgevsfabric(void)
 	cml("a href='/thoughts/'", "Back to thoughts");
 
 	cml("h1", "Thoughts on (Neo)Forge vs Fabric");
+	cml_noend("hr");
 
 	cml("p", "This is one of my hotter takes. I think that (Neo)Forge and Fabric are equally bad/good mod loaders.");
 	cml("p",

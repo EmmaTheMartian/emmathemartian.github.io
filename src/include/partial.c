@@ -31,28 +31,36 @@ static void _page(char *title, struct _page_opts opts)
 	cml_noend("meta name='viewport' content='width=device-width, initial-scale=1'");
 	cml_noend("link rel='stylesheet' href='/static/style.css'");
 	if (opts.header != NULL)
-	{
 		opts.header();
-	}
-	cml_end();
+	cml_end(); /* head */
 
 	cml_new("body");
 
+	cml_new("header");
+	cml("h1", "Emmeline's Site");
+	cml_end(); /* header */
+
+	cml_new("div class='content'");
+
 	cml_new("nav");
+	cml("p", "<b>Navigation</b>");
+	cml_new("ul");
 	int f = cml_getfmt();
 	cml_setfmt(0);
+	cml_new("li");
 	cml("a href='/'", "index");
-	cml_text(" - ");
+	cml_end(); /* li */
 	for (const char **p = &_nav[0] ; *p != NULL ; p++)
 	{
+		cml_new("li");
 		cml_newf("a href='/%s/'", (char *)*p);
 		cml_text("%s", (char *)*p);
-		cml_end();
-		if (*(p+1) != NULL)
-			cml_text(" - ");
+		cml_end(); /* a */
+		cml_end(); /* li */
 	}
 	cml_setfmt(f);
-	cml_end();
+	cml_end(); /* ul */
+	cml_end(); /* nav */
 
 	cml_new("main");
 }
@@ -61,10 +69,8 @@ static void _page(char *title, struct _page_opts opts)
 
 void endpage(void)
 {
-	cml_end();
-
 	cml_new("footer");
-	cml_noend("hr");
+	cml_noend("br");
 	time_t t;
 	struct tm *tm;
 	time(&t);
@@ -73,10 +79,11 @@ void endpage(void)
 	strftime(str, 512, "%Y-%m-%d %H:%M:%S (GMT)", tm);
 	cml("p", "Site compiled at <code>%s</code>", str);
 	free(str);
-	cml_end();
-
-	cml_end();
-	cml_end();
+	cml_end(); /* footer */
+	cml_end(); /* main */
+	cml_end(); /* div class='content' */
+	cml_end(); /* body */
+	cml_end(); /* html */
 }
 
 void button(char *href, char *src, char *alt, int pixelate)
@@ -84,13 +91,21 @@ void button(char *href, char *src, char *alt, int pixelate)
 	int f = cml_getfmt();
 	cml_setfmt(0);
 	cml_new("span");
-	cml_newf("a class='button-88x31' href=\"%s\"", href);
+
+	if (href)
+		cml_newf("a class='button-88x31' href=\"%s\"", href);
+	else
+		cml_newf("span class='button-88x31'");
+
 	if (pixelate)
 		cml_noend("img src=\"%s\" alt=\"%s\" width='88' height='31' decoding='async' style='image-rendering:pixelated;'", src, alt);
 	else
 		cml_noend("img src=\"%s\" alt=\"%s\" width='88' height='31' decoding='async'", src, alt);
-	cml_end();
-	cml_end();
+
+	cml_end(); /* a or span */
+	cml_end(); /* span */
+
+	cml_noend("br");
 	cml_setfmt(f);
 }
 

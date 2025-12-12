@@ -7,6 +7,7 @@ static void p_contact(void)
 	page("Contact");
 
 	cml("h1", "Contact & Accounts");
+	cml_noend("hr");
 	cml("p", "I'm not on much social media, and the ones that I rarely check those that I do have accounts on.");
 	cml("p", "You may find me out in the wild on other platforms, but aside from the listed ones here I'm mostly inactive.");
 
@@ -14,6 +15,7 @@ static void p_contact(void)
 	cml("li", "Discord: <code>@emmathemartian</code> (send me the word \"glados\" so I can differentiate from spam!)");
 	cml("li", "E-Mail: <a href='mailto:me@emmelinecoats.com'>me@emmelinecoats.com</code> (mailto)");
 	cml("li", "<a href='https://tangled.org/@emmathemartian.tngl.sh'>Tangled</a>");
+	cml("li", "<a href='https://bsky.app/profile/emmeline.girlkisser.top'>Bluesky</a>*");
 	cml("li", "<a href='https://github.com/emmathemartian'>GitHub</a>*");
 	cml("li", "<a href='https://codeberg.org/emmathemartian'>Codeberg</a>*");
 	cml("li", "<a href='https://modrinth.com/user/emmathemartian'>Modrinth</a>*");

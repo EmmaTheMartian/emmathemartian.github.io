@@ -9,6 +9,7 @@ struct project_t
 	const char *name, *kind, *status, *link, *desc;
 };
 
+#define TANGLED(repo) ("https://tangled.org/emmeline.girlkisser.top/" repo "/")
 #define GITHUB(repo) ("https://github.com/" repo "/")
 #define CODEBERG(repo) ("https://codeberg.org/" repo "/")
 
@@ -20,7 +21,14 @@ struct project_t
 #define TOOL ("Tool")
 #define COMPILER ("Compiler")
 
-struct project_t _projects[] = {
+struct project_t _current_projects[] = {
+	{ "keraforge",     APP,        "Active",         TANGLED("keraforge"),                "A top-down 2D RPG game engine.", },
+	{ "beep",          APP,        "Active",         TANGLED("beep"),                     "A self-hosted mini-blogger.", },
+
+	{ NULL }
+};
+
+struct project_t _older_projects[] = {
 	/* Github projects */
 	{ "Sea",           COMPILER,   "WIP",         GITHUB("sea-lang/sea"),                 "A general-purpose language designed for low-level-capable, performant, and portable code.", },
 	{ "MineFactorial", MC_MOD,     "WIP",         GITHUB("emmathemartian/minefactorial"), "MineFactory revived and reimagined for modern versions", },

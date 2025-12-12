@@ -12,6 +12,7 @@ void p_misc_gifcollection(void)
 	page("GIF Collection", .header = _p_misc_gifcollection_header);
 
 	cml("h1", "GIF Collection");
+	cml_noend("hr");
 	cml("p",
 "I use a *lot* of GIFs when talking on Discord, and Discord's GIF picker \
 does not cache GIFs, making it atrociously slow to find a GIF in my favourites \
@@ -46,7 +47,7 @@ me \"tag\" my GIFs for ease-of-searching.");
 	cml("div id='collection'", "");
 	cml_end();
 
-	#if 0 /* prod */
+	#if 1 /* prod */
 	cml("script defer type='text/javascript' src='https://unpkg.com/papaparse@5.5.3/papaparse.min.js'", "");
 	cml("script defer type='text/javascript' src='https://unpkg.com/fuse.js@7.1.0/dist/fuse.min.js'", "");
 	#else /* dev */

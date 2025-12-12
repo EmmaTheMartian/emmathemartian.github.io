@@ -7,6 +7,7 @@ void p_about(void)
 	page("About");
 
 	cml("h1", "About Me");
+	cml_noend("hr");
 
 	cml("p", "Hai again, I'm Emmeline! You can also just call me Emma.");
 	cml("p", "Please note: this info is just me info-dumping about my interests and is *not* comprehensive nor completely detailed.");
@@ -20,8 +21,12 @@ void p_about(void)
 	cml("li", "My favourite colour is yellow!");
 	cml_end();
 
-	cml_noend("hr");
+	cml_noend("br");
 	cml("h2", "Games");
+	cml_noend("hr");
+
+	cml("p", "I do most of my gaming on my PC, although I also thoroughly enjoy 3DS gaming.");
+	cml("p", "I don't really play any mobile games anymore (no, i don't \"got games on my phone\" /reference).");
 
 	cml("p", "I primarily play modded Minecraft, Terraria, and an assortment of rhythm games.");
 	cml("p", "I enjoy automation/logistics (modded Minecraft and Factorio especially) and a nice challenge (modded Terraria and rhythm games).");
@@ -31,15 +36,15 @@ void p_about(void)
 		cml("summary", "Favourite Games");
 		cml("p", "Favourites");
 		cml_new("ul");
+		cml("li", "Terraria");
+		cml("li", "UNBEATABLE");
+		cml("li", "Devil May Cry");
+		cml("li", "Factorio");
 		cml("li", "Modded Minecraft");
+		cml("li", "Vanilla Minecraft Beta 1.7.3");
 		cml("li", "Beat Saber");
 		cml("li", "osu!");
 		cml("li", "Portal");
-		cml("li", "Terraria");
-		cml("li", "Vanilla Minecraft Beta 1.7.3");
-		cml("li", "Balatro");
-		cml("li", "Factorio");
-		cml("li", "UNBEATABLE");
 		cml_end();
 		cml("p", "Likes");
 		cml_new("ul");
@@ -50,14 +55,23 @@ void p_about(void)
 		cml("li", "SNKRX");
 		cml("li", "Borderlands 2");
 		cml("li", "Stardew Valley");
-		cml("li", "Satisfactory");
 		cml("li", "Haste");
+		cml("li", "Balatro");
 		cml_end();
 	}
 	cml_end();
 
-	cml_noend("hr");
+	cml("h3", "Minecraft");
+	cml("p", "I mod Minecraft quite a lot and play a good bit too. Just as my favourite game genres, I like automation+logistics in Minecraft too.");
+	cml("p", "GregTech and IndustrialCraft 2 are my favourite mods, Psi and Hex Casting are also really fun.");
+	cml("p", "I have a love-hate relationship with Create. I love the mod itself but dislike that so many modpacks throw it in with zero rebalancing. Create focuses on passive power-generation, meaning that it cripples other tech mods (which usually depend on active power-generation) if left unbalanced.");
+	cml("p", "Immersive Engineering and Botania are also super cool.");
+	cml_noend("br");
+	cml("p", "Most people find my keybinds pretty silly, <kbd>E</kbd> for use/place block, <kbd>Tab</kbd> for inventory, <kbd>Mouse 4</kbd> for crouch, and <kbd>Mouse 5</kbd> for sprint.");
+
+	cml_noend("br");
 	cml("h2", "Music");
+	cml_noend("hr");
 	cml("p", "I primarily listen to EDM (+subgenres), 2000s alternative rock, emo, metal, and indie rock.");
 	cml("p", "I also enjoy Vocaloid music. For the 2-ish Vocaloid enjoyers reading this, my favourites are GUMI, Flower, Teto, and Len (and Miku, duh).");
 	cml("p", "I like to collect my favourite albums on vinyl, currently my collection is small but consists of Favourite Worst Nightmare and AM by Arctic Monkeys and Hot Fuss by The Killers. I'm trying to hunt down Tourist History by Two Door Cinema Club.");
@@ -99,16 +113,18 @@ void p_about(void)
 	}
 	cml_end();
 
-	cml_noend("hr");
+	cml_noend("br");
 	cml("h2", "Visual Media");
+	cml_noend("hr");
 	cml("p", "I don't watch very many movies, but I do love Lord of the Rings (the books are better, imo) and Interstellar.");
 	cml("p", "My favourite Disney films are Lilo and Stitch and Big Hero 6. I have... quite a lot of Stitch merchandise...");
 	cml("p", "I very rarely watch cable or anything on a TV. I usually just watch Netflix on my phone or something.");
 	cml("p", "Ultimately, when I watch visual media, I'm usually watching a YouTube video pertaining to my interests.");
 	cml("p", "I have a list of my favourite movies and TV shows <a href='/misc/tv-and-movies/'>here</a>.");
 
-	cml_noend("hr");
+	cml_noend("br");
 	cml("h2", "Programming");
+	cml_noend("hr");
 	cml("p", "I primarily work in C(99), C#, and Java. I use the latter only for Minecraft modding and the former two for most of my other projects.");
 	cml("p", "I don't particularly like Java but since I've used it so much, I've grown to at least be okay with using it.");
 	cml("p", "My favourite languages are C and Lua.");
@@ -155,23 +171,16 @@ void p_about(void)
 	}
 	cml_end();
 
-	cml_noend("hr");
-	cml("h2", "Minecraft");
-	cml("p", "I mod Minecraft quite a lot and play a good bit too. Just as my favourite game genres, I like automation+logistics in Minecraft too.");
-	cml("p", "GregTech and IndustrialCraft 2 are my favourite mods, Psi and Hex Casting are also really fun.");
-	cml("p", "I have a love-hate relationship with Create. I love the mod itself but dislike that so many modpacks throw it in with zero rebalancing. Create focuses on passive power-generation, meaning that it cripples other tech mods (which usually depend on active power-generation) if left unbalanced.");
-	cml("p", "Immersive Engineering and Botania are also super cool.");
 	cml_noend("br");
-	cml("p", "Most people find my keybinds pretty silly, <kbd>E</kbd> for use/place block, <kbd>Tab</kbd> for inventory, <kbd>Mouse 4</kbd> for crouch, and <kbd>Mouse 5</kbd> for sprint.");
-
-	cml_noend("hr");
 	cml("h2", "Assorted Interests and Hobbies");
+	cml_noend("hr");
 	cml("p", "I enjoy astronomy, world-building, linguistics, embroidery, and reading.");
 	cml("p", "I like making conlangs, usually for my worlds.");
 	cml("p", "My favourite book genres are dystopia and fantasy. <i>1974</i> my George Orwell is my favourite book. <i>Ender's Game</i> by Orson Scot Card and <i>The Hitchhiker's Guide to the Galaxy</i> by Douglas Adams are also really good.");
 
-	cml_noend("hr");
+	cml_noend("br");
 	cml("h2", "Emoticons and Emojis");
+	cml_noend("hr");
 	cml("p", "I use a plethora of emoticons, including:");
 	cml_new("ul");
 	cml("li", ":D >:D XD D:");
@@ -186,8 +195,9 @@ void p_about(void)
 	cml_end();
 	cml("p", "I use these to help control the tone of my messages or make jokes.");
 
-	cml_noend("hr");
+	cml_noend("br");
 	cml("h2", "The End");
+	cml_noend("hr");
 	cml("p", "Wait did you actually read everything here???");
 	cml("p", "Anyway. If there's anything else you want to know about me then feel free to ask personally! Don't worry, I don't bite :3");
 

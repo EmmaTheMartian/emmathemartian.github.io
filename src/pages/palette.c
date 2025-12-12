@@ -22,6 +22,7 @@ static void p_palette(void)
 	secret("palette");
 
 	cml("h1", "Palette");
+	cml_noend("hr");
 
 	cml("p", "This secret is boring, but whatever. It's the colour palette for my website my sona. I mostly have it here for personal reference :P.");
 

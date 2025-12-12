@@ -9,6 +9,7 @@ void p_thoughts_modernminecraft(void)
 	cml("a href='/thoughts/'", "Back to thoughts");
 
 	cml("h1", "Thoughts on Modern Minecraft");
+	cml_noend("hr");
 
 	cml("p",
 "I have pretty strong opinions on Minecraft and how it's changed \
@@ -25,7 +26,9 @@ but if you contact me saying something like \"your opinions on \
 modern minecraft are wrong\" then I'm going to ignore you. \
 Opinions are subjective, suck it up and deal with it.");
 
+	cml_noend("br");
 	cml("h2", "It's a sandbox... right?");
+	cml_noend("hr");
 	cml("p", "After Microsoft's acquisition of Mojang, I noticed that the updates started to... slowly lose the creative feeling of Minecraft.");
 	cml("p",
 "The game is advertised as a sandbox, exploration, and crafting \
@@ -203,7 +206,9 @@ doesn't sit right for me. Any version before 1.13, heck yeah, \
 but after then... it just doesn't feel like \"Minecraft\" to me \
 anymore.");
 
+	cml_noend("br");
 	cml("h2", "Textures");
+	cml_noend("hr");
 	cml("p",
 "Okay so this point is really... *really* subjective. Most \
 people I've talked to about this like the new textures, and yeah, \
@@ -231,7 +236,9 @@ drops update scheme helps with this, and so far it does seem to \
 be.");
 	cml("p", "Speaking of, just a few days ago (as of 07/07/2025) the Copper Golem was announced, so maybe they are fixing their mob vote tomfoolery.");
 
+	cml_noend("br");
 	cml("h2", "\"Fixing\" the Modern Game");
+	cml_noend("hr");
 	cml("p",
 "Okay! So I've explained why I don't like the updates, but I do \
 like modding on new versions since there's better tooling and \
