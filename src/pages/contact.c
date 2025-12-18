@@ -14,7 +14,7 @@ static void p_contact(void)
 	cml_new("ul");
 	cml("li", "Discord: <code>@emmathemartian</code> (send me the word \"glados\" so I can differentiate from spam!)");
 	cml("li", "E-Mail: <a href='mailto:me@emmelinecoats.com'>me@emmelinecoats.com</code> (mailto)");
-	cml("li", "<a href='https://tangled.org/@emmathemartian.tngl.sh'>Tangled</a>");
+	cml("li", "<a href='https://tangled.org/@emmeline.girlkisser.top'>Tangled</a>");
 	cml("li", "<a href='https://bsky.app/profile/emmeline.girlkisser.top'>Bluesky</a>*");
 	cml("li", "<a href='https://github.com/emmathemartian'>GitHub</a>*");
 	cml("li", "<a href='https://codeberg.org/emmathemartian'>Codeberg</a>*");

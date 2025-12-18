@@ -11,6 +11,7 @@ static void p_index()
 
 	cml("p", "I'm a programmer interested in compilers and game development.");
 	cml("p", "I'm quite friendly, thoroughly enjoy yapping, and love making friends; please feel free to <a href='/contact/'>contact</a> me!");
+	cml("p", "Nicknames: May, Emma");
 	cml_noend("br");
 	cml("p", "If you're trying to contact me, you can find my info <a href='/contact/'>here</a>.");
 	cml("p", "If you're looking for my projects, you can find them <a href='/projects/'>here</a>.");
